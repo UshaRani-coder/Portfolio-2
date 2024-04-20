@@ -65,12 +65,24 @@
   font-weight: 900;
   font-style: normal;
   }
-  li{
+  .section,.work-exp,.contributions{
     font-family: "Tapestry", serif;
     transition: transform 0.3s ease;
+    letter-spacing: 2px;
   }
-  li:hover{
+  .section:hover{
     transform: scale(1.5);
     color:#D80065
   }
- 
+  .work-exp,.contributions{
+    letter-spacing: 5px;
+  }
+  .skill{
+    
+      background-color: #1e1e1e; /* Darker background color */
+      border-radius: 10px; /* Rounded corners */
+      box-shadow: 5px 5px 10px #0f0f0f, -5px -5px 10px #333; /* Inset shadow */
+      margin: 10px 0;
+      padding: 20px;
+    
+  }
