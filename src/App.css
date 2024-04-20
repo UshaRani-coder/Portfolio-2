@@ -1,0 +1,76 @@
+
+@keyframes fallAnimation {
+    0% {
+      transform: translateY(-50%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .animate-img-fall {
+    animation: fallAnimation 1.5s ease forwards;
+  }
+  @keyframes raiseAnimation {
+    0% {
+        transform: translateY(50%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+  }
+  .animate-content {
+    animation: raiseAnimation 1.5s ease forwards;
+  }
+  @keyframes logoAnimation{
+    0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+  .animate-logo {
+    animation: logoAnimation 1.5s ease forwards;
+  }
+  @keyframes hamburgerIconAnimation{
+    0% {
+        transform: translateX(50%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+  .animate-hamburger {
+    animation: hamburgerIconAnimation 1.5s ease forwards;
+  }
+  .name,.role {
+    font-family: "Kelly Slab", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  @keyframes hamburgerAnimation{
+    0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0);
+      }
+  }
+  .animate-hamburgerMenu{
+    animation: hamburgerAnimation 1.5s ease forwards;
+  }
+  .logo{
+    font-family: "Rubik Glitch Pop", system-ui;
+  font-weight: 900;
+  font-style: normal;
+  }
+  li{
+    font-family: "Tapestry", serif;
+    transition: transform 0.3s ease;
+  }
+  li:hover{
+    transform: scale(1.5);
+    color:#D80065
+  }
+ 
