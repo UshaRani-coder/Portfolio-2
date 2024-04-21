@@ -4,6 +4,7 @@ import Hero from '../components/Hero.jsx';
 import Work from './Work.jsx';
 import Skills from './Skills.jsx';
 import Projetcs from './Projetcs.jsx';
+import Testimonial from './Testimonials.jsx'
 function Home(props) {
   return (
     <div className=''>
@@ -23,6 +24,7 @@ function Home(props) {
       <Skills />
       <Work />
       <Projetcs />
+      <Testimonial />
     </div>
   );
 }
