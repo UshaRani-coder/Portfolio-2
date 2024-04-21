@@ -3,7 +3,7 @@ import ReactProjects from "../components/ReactProjects.jsx";
 import JsProjects from "../components/JsProjects.jsx";
 import reactIcon from '../assets/atom.png';
 import jsIcon from '../assets/js.png'
-function Projetcs() {
+function Projects() {
   const [reactClick, setReactClick] = useState(false);
   const [jsClick, setJsClick] = useState(false);
   return (
@@ -31,4 +31,4 @@ function Projetcs() {
   );
 }
 
-export default Projetcs;
+export default Projects;

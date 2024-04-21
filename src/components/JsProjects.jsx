@@ -75,12 +75,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Expense-tracker_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-expense-tracker-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -104,12 +104,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Music-Player_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-music-player-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -133,12 +133,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Typing-Game_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-typing-game-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -167,12 +167,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Form-Validation_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-form-validation-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -195,12 +195,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Calculator_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-calculator-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -224,12 +224,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Memory-card-game_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-memory-card-game-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -252,12 +252,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Stopwatch_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-stopwatch-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -277,12 +277,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_To-do-App_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-to-do-app-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -315,12 +315,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Color-Guessing-game-UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-color-guessing-game-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -356,12 +356,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Countdown_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-countdown-ur-rouge.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
@@ -386,12 +386,12 @@ function JsProjects({ setJsClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/JS_Word-Count_UR">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://js-word-count-ur.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>

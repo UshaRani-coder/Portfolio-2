@@ -76,11 +76,11 @@ function ReactProjects({ setReactClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/SiddheshAR/resume_builder">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
-        <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+        <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
           Live Link
         </button>
       </div>
@@ -129,12 +129,12 @@ function ReactProjects({ setReactClick }) {
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
         <Link to="https://github.com/UshaRani-coder/Chat-Application">
-          <button class="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
+          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
             Source Code
           </button>
         </Link>
         <Link to="https://chat-application-lyyj-61jgca6mt-ur66026gmailcoms-projects.vercel.app/">
-          <button class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
             Live Link
           </button>
         </Link>
