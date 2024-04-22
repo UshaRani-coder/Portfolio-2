@@ -159,3 +159,11 @@
 input:not(:placeholder-shown) {
   padding: 2px 0px 2px 10px;
 }
+textarea:not(:placeholder-shown) {
+  padding: 2px 10px 2px 10px;
+}
+.gradient-border {
+  border: 2px solid transparent;
+  border-image: linear-gradient(to right, #532aad, #b47bfe, #e25fff) 1;
+ 
+}

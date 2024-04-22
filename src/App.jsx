@@ -3,7 +3,7 @@ import Home from "./pages/Home.jsx";
 
 function App() {
   const [toggle, setToggle] = useState(false);
-
+  
   function handleClick() {
     setToggle((prev) => !prev);
     console.log("yey");
