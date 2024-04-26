@@ -35,14 +35,14 @@ function Contact({setShowPopup}) {
   };
 
   return (
-    <div className="flex flex-col items-center mt-[30px]">
+    <div className="flex flex-col items-center mt-[30px]" id="contact">
        <h2 className="contact-heading mb-[25px]">Get in touch</h2>
     <form ref={form} onSubmit={sendEmail} className="contact w-[80%] flex flex-col">
-      <label className="text-[rgb(188,63,255)] text-sm mt-[20px] block mb-[5px]">Name</label>
+      <label className="text-[#FF00FF] text-sm mt-[20px] block mb-[5px]">Name</label>
       <input type="text" name="user_name"  onChange={()=>setNameInputValue(true)}  className={` rounded-md ${nameInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `}/>
-      <label className="text-[rgb(188,63,255)] text-sm mt-[20px] block mb-[5px]">Email</label>
+      <label className="text-[#FF00FF] text-sm mt-[20px] block mb-[5px]">Email</label>
       <input type="email" name="user_email"  onChange={()=>setEmailInputValue(true)}  className={` rounded-md ${emailInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `} />
-      <label className="text-[rgb(188,63,255)] text-sm mt-[20px] block mb-[5px]">Message</label>
+      <label className="text-[#FF00FF] text-sm mt-[20px] block mb-[5px]">Message</label>
       <textarea name="message" rows={'3'}  onChange={()=>setMessageInputValue(true)} className={` rounded-md ${messageInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `} />
       {/* <input type="submit" value="Send" /> */}
       <button className=" mt-[20px] bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">

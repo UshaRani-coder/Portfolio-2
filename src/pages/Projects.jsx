@@ -7,7 +7,7 @@ function Projects() {
   const [reactClick, setReactClick] = useState(false);
   const [jsClick, setJsClick] = useState(false);
   return (
-    <div className="mt-[30px] flex flex-col items-center">
+    <div className="mt-[30px] flex flex-col items-center" id="projects">
       <h1 className="projects">Projects</h1>
       {reactClick === false && jsClick === false && (
         <div className="flex gap-[30px] mt-[25px] ">

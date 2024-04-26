@@ -20,7 +20,7 @@ function JsProjects({ setJsClick }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
-        fill="#ae3eff"
+        fill="#FF00FF"
         width={"20px"}
         className="absolute top-[-20px] left-[40px]  cursor-pointer"
         onClick={()=>setJsClick(false)}
@@ -55,7 +55,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Expense Tracker
         </h1>
         <img
@@ -86,7 +86,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Music Player
         </h1>
         <img
@@ -115,7 +115,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Typing Speed Game
         </h1>
         <img
@@ -144,7 +144,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Form Validation
         </h1>
         <img
@@ -178,7 +178,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Calculator
         </h1>
         <img
@@ -206,7 +206,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Memory Game
         </h1>
         <img
@@ -235,7 +235,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Stop Watch
         </h1>
         <img
@@ -263,7 +263,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           To-Do List
         </h1>
         <img src={toDoListImg} alt="to-do" className="w-[100%]  rounded-lg " />
@@ -288,7 +288,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Color Guessing Game
         </h1>
         <img
@@ -326,7 +326,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Birthday Countdown
         </h1>
         <img
@@ -367,7 +367,7 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div>
       <div className="w-[80%]  js-project  ">
-        <h1 className="project-name text-[rgb(188,63,255)] text-xl text-center mb-[10px]">
+        <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Word Counter
         </h1>
         <img

@@ -22,9 +22,9 @@
   .animate-content {
     animation: raiseAnimation 1.5s ease forwards;
   }
-  @keyframes logoAnimation{
+  /* @keyframes logoAnimation{
     0% {
-        transform: translateX(-50%);
+        transform: translateX(-5%);
       }
       100% {
         transform: translateX(0);
@@ -35,15 +35,15 @@
   }
   @keyframes hamburgerIconAnimation{
     0% {
-        transform: translateX(50%);
+        transform: translateX(5%);
       }
       100% {
         transform: translateX(0);
       }
   }
   .animate-hamburger {
-    animation: hamburgerIconAnimation 1.5s ease forwards;
-  }
+    animation: hamburgerIconAnimation 0.5s ease backwards;
+  } */
   .name,.role {
     font-family: "Kelly Slab", sans-serif;
   font-weight: 400;
@@ -73,7 +73,7 @@
   }
   .section:hover{
     transform: scale(1.5);
-    color:rgb(188,63,255);
+    color:#FF00FF;
   }
   .work-exp,.contributions,.skills,.projects,.testimonials,.contact-heading{
     letter-spacing: 5px;
@@ -142,7 +142,7 @@
   left: 20px;
   font-size: 70px;
   font-family: "Merienda", cursive;
-  color: rgb(188,63,255);
+  color: #FF00FF;
  }
  .testimonial::after{
   content: ' " ';
@@ -151,7 +151,7 @@
   bottom: -30px;
   font-size: 70px;
   font-family: "Merienda", cursive;
-  color: rgb(188,63,255);
+  color: #FF00FF;
   transform: rotate(180deg);
  }
  

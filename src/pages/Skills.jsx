@@ -12,7 +12,7 @@ import { Link } from 'react-router-dom'
 import reactRouter from '../assets/react-router.svg'
 function Skills() {
   return (
-    <div className=' mt-[30px] flex flex-col items-center  '>
+    <div className=' mt-[30px] flex flex-col items-center' id='skills'>
       <h2 className="skills mb-[15px]">Skills</h2>
         <ul className=' w-[90%] flex gap-[40px] justify-center flex-wrap '>
             <Link to="https://developer.mozilla.org/en-US/docs/Web/HTML"><li className='animate-skill skill cursor-pointer py-[20px]'><img src={htmlIcon} alt="html" width={'30px'} /></li></Link>
