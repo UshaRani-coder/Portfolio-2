@@ -7,9 +7,21 @@
       transform: translateY(0);
     }
   }
-  
+  @keyframes myImageAnimation {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
   .animate-img-fall {
     animation: fallAnimation 1.5s ease forwards;
+  }
+  @media screen and (min-width : 1024px) {
+    .animate-img-fall {
+      animation: myImageAnimation 1.5s ease forwards;
+    }
   }
   @keyframes raiseAnimation {
     0% {
@@ -103,7 +115,7 @@
       transform: translateX(-100%);
     }
     50%{
-      transform: translateX(25%);
+      transform: translateX(10%);
     }
     100%{
       transform: translateX(0);
@@ -115,7 +127,7 @@
       transform: translateX(100%);
     }
     50%{
-      transform: translateX(-25%);
+      transform: translateX(-10%);
     }
     100%{
       transform: translateX(0);

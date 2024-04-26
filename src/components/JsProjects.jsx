@@ -16,7 +16,7 @@ import jsIcon from "../assets/js.png";
 import { Link } from "react-router-dom";
 function JsProjects({ setJsClick }) {
   return (
-    <div className=" mt-[30px] flex flex-col items-center relative">
+    <div className=" mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 448 512"
@@ -27,7 +27,7 @@ function JsProjects({ setJsClick }) {
       >
         <path d="M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
       </svg>
-      <h1 className="project-name   text-center mb-[10px]">All made with</h1>
+      <h1 className="project-name   text-center mb-[10px] md:text-[20px]">All made with</h1>
       <div className="flex gap-[20px] mb-[15px]">
         <Link to="https://developer.mozilla.org/en-US/docs/Web/HTML">
           <img
@@ -54,7 +54,7 @@ function JsProjects({ setJsClick }) {
           />
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Expense Tracker
         </h1>
@@ -65,8 +65,8 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           Dynamic webpage with Tailwind CSS utilizes{" "}
-          <span className="font-bold">local storage</span> for finance tracking.
-          <span className="font-bold">
+          <span className="text-white font-bold">local storage</span> for finance tracking.
+          <span className="text-white font-bold">
             {" "}
             Event handling, DOM manipulation, and error handling{" "}
           </span>{" "}
@@ -85,7 +85,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Music Player
         </h1>
@@ -96,7 +96,7 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           Dynamic music player with{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             play, pause, next, and previous controls. Displays song details,
             slider for seeking, and volume adjustment
           </span>
@@ -114,7 +114,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Typing Speed Game
         </h1>
@@ -125,7 +125,7 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           The project involves a typing speed test application with{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             dynamic paragraph rendering. It tracks words per minute (WPM),
             characters per minute (CPM), and accuracy
           </span>
@@ -143,7 +143,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Form Validation
         </h1>
@@ -154,13 +154,13 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           It{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             checks for blank inputs, valid email format, password complexity,
             and password match confirmation
           </span>
-          . Upon <span className="font-bold">successful validation</span>, it
-          displays a <span className="font-bold">confirmation message</span>.The{" "}
-          <span className="font-bold">regex</span> pattern is applied to
+          . Upon <span className="text-white font-bold">successful validation</span>, it
+          displays a <span className="text-white font-bold">confirmation message</span>.The{" "}
+          <span className="text-white font-bold">regex</span> pattern is applied to
           validate the password's format and provide appropriate feedback to the
           user.
         </p>
@@ -177,7 +177,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Calculator
         </h1>
@@ -188,9 +188,9 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           A calculator with{" "}
-          <span className="font-bold">input, delete, reset, and result</span>{" "}
+          <span className="text-white font-bold">input, delete, reset, and result</span>{" "}
           functionality using JavaScript{" "}
-          <span className="font-bold">event handling & error handling</span>.
+          <span className="text-white font-bold">event handling & error handling</span>.
         </p>
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
@@ -205,7 +205,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Memory Game
         </h1>
@@ -216,10 +216,10 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           A memory game with{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             flipping cards, matching images, and congratulatory alerts
           </span>{" "}
-          using JavaScript <span className="font-bold">event handling.</span>
+          using JavaScript <span className="text-white font-bold">event handling.</span>
         </p>
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
@@ -234,7 +234,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Stop Watch
         </h1>
@@ -246,7 +246,7 @@ function JsProjects({ setJsClick }) {
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           A stopwatch with hours, minutes, seconds, and milliseconds displayed
           in 00 format. Functions manage{" "}
-          <span className="font-bold">start, stop, and reset operations,</span>{" "}
+          <span className="text-white font-bold">start, stop, and reset operations,</span>{" "}
           updating the display accordingly.
         </p>
       </div>
@@ -262,17 +262,17 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           To-Do List
         </h1>
         <img src={toDoListImg} alt="to-do" className="w-[100%]  rounded-lg " />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           This project lets users to{" "}
-          <span className="font-bold">add, edit, and delete tasks</span>. Tasks
-          are stored in <span className="font-bold">local storage,</span>{" "}
+          <span className="text-white font-bold">add, edit, and delete tasks</span>. Tasks
+          are stored in <span className="text-white font-bold">local storage,</span>{" "}
           ensuring{" "}
-          <span className="font-bold">persistence across page loads.</span>
+          <span className="text-white font-bold">persistence across page loads.</span>
         </p>
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
@@ -287,7 +287,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project  md:w-[50%] lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Color Guessing Game
         </h1>
@@ -298,19 +298,19 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           This project{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             generates random RGB color and displays it along with colored
             circles.
           </span>{" "}
           Users attempt to{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             match the displayed color by clicking on the circles
           </span>
           . If correct, a{" "}
-          <span className="font-bold">success message appears;</span> otherwise,
-          they're prompted to <span className="font-bold">try again.</span> A
+          <span className="text-white font-bold">success message appears;</span> otherwise,
+          they're prompted to <span className="text-white font-bold">try again.</span> A
           button allows generating a new{" "}
-          <span className="font-bold">random color</span>
+          <span className="text-white font-bold">random color</span>
         </p>
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
@@ -325,7 +325,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Birthday Countdown
         </h1>
@@ -336,22 +336,22 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           This project{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             prompts the user to enter their birthdate in the 'year-month-day'
             format.
           </span>{" "}
           It then calculates the countdown to the{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             next birthday in days, hours, minutes, and seconds, updating the
             corresponding fields.
           </span>{" "}
           Users can{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             start and reset the countdown timer.
           </span>{" "}
           If the birthdate entered is{" "}
-          <span className="font-bold">invalid,</span> it prompts the user to
-          enter it <span className="font-bold">correctly.</span>
+          <span className="text-white font-bold">invalid,</span> it prompts the user to
+          enter it <span className="text-white font-bold">correctly.</span>
         </p>
       </div>
       <div className="buttons flex gap-[20px] mb-[25px]">
@@ -366,7 +366,7 @@ function JsProjects({ setJsClick }) {
           </button>
         </Link>
       </div>
-      <div className="w-[80%]  js-project  ">
+      <div className="w-[80%]  js-project md:w-[50%]  lg:w-[30%]">
         <h1 className="project-name text-[#FF00FF] text-xl text-center mb-[10px]">
           Word Counter
         </h1>
@@ -377,10 +377,10 @@ function JsProjects({ setJsClick }) {
         />
         <p className="text-ellipsis text-ellipsis overflow-hidden mt-[20px]">
           The script counts the{" "}
-          <span className="font-bold">
+          <span className="text-white font-bold">
             number of words and characters entered in a textarea.
           </span>
-          Finally, it <span className="font-bold">updates</span> the
+          Finally, it <span className="text-white font-bold">updates</span> the
           corresponding span elements with the word and character counts.
         </p>
       </div>

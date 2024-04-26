@@ -35,8 +35,8 @@ function Contact({setShowPopup}) {
   };
 
   return (
-    <div className="flex flex-col items-center mt-[30px]" id="contact">
-       <h2 className="contact-heading mb-[25px]">Get in touch</h2>
+    <div className="flex flex-col items-center mt-[30px] text-white mb-[30px]" id="contact">
+       <h2 className="contact-heading mb-[25px]  md:text-[25px] font-bold">Get in touch</h2>
     <form ref={form} onSubmit={sendEmail} className="contact w-[80%] flex flex-col">
       <label className="text-[#FF00FF] text-sm mt-[20px] block mb-[5px]">Name</label>
       <input type="text" name="user_name"  onChange={()=>setNameInputValue(true)}  className={` rounded-md ${nameInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `}/>

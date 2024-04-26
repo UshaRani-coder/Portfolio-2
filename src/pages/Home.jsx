@@ -88,7 +88,7 @@ import Contact from "./Contact.jsx";
 import Hero from "../components/Hero.jsx";
 function Home(props) {
   return (
-    <div className="relative">
+    <div className="relative md:text-[20px] md:tracking-wider text-[rgb(181,187,198)]">
       {/* <Navbar style={{position:'fixed',top:'0px',zIndex: "999"}} {...props}/> */}
       <Navbar {...props}/>
       <Hero />

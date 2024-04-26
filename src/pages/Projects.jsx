@@ -8,17 +8,17 @@ function Projects() {
   const [jsClick, setJsClick] = useState(false);
   return (
     <div className="mt-[30px] flex flex-col items-center" id="projects">
-      <h1 className="projects">Projects</h1>
+      <h1 className="projects text-white font-semibold md:text-[25px]">Projects</h1>
       {reactClick === false && jsClick === false && (
         <div className="flex gap-[30px] mt-[25px] ">
           <div
-            className=" py-[30px] px-[25px] bg-gradient-to-br from-purple-400 to-pink-600  rounded-xl cursor-pointer react"
+            className="py-[30px] px-[25px] md:px-[70px] md:py-[70px] lg:p-[100px] bg-gradient-to-br from-teal-800 to-purple-900 rounded-xl cursor-pointer react"
             onClick={() => setReactClick(true)}
           >
            <img src={reactIcon} alt="js" width={'60px'} />
           </div>
           <div
-            className=" py-[30px] px-[25px] bg-gradient-to-br from-purple-400 to-pink-600   rounded-xl cursor-pointer js"
+            className="py-[30px] px-[25px] md:px-[70px] md:py-[70px] lg:p-[100px] bg-gradient-to-br from-teal-800 to-purple-900 rounded-xl cursor-pointer  js"
             onClick={() => setJsClick(true)}
           >
             <img src={jsIcon} alt="js" width={'60px'} />
