@@ -137,6 +137,7 @@ function App() {
   return (
     <Router>
       <div className="bg-[#000000] text-white overflow-x-hidden">
+        
         {toggle ? (
           <ul
             className={`animate-hamburgerMenu ${

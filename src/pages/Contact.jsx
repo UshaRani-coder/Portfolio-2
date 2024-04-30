@@ -4,6 +4,7 @@ import phoneImg from "../assets/call.png";
 import gmailImg from "../assets/new.png";
 import linkedInImg from "../assets/linkedin.png";
 import { Link } from "react-router-dom";
+import svg from '../assets/contact.png'
 function Contact({setShowPopup}) {
   const [nameInputValue, setNameInputValue] = useState(false);
   const [emailInputValue, setEmailInputValue] = useState(false);
@@ -22,7 +23,6 @@ function Contact({setShowPopup}) {
           console.log('SUCCESS!');
           e.target.reset()
           setShowPopup(true)
-          
         },
         (error) => {
           console.log('FAILED...', error.text);
@@ -35,9 +35,10 @@ function Contact({setShowPopup}) {
   };
 
   return (
-    <div className="flex flex-col items-center mt-[30px] text-white mb-[30px]" id="contact">
-       <h2 className="contact-heading mb-[25px]  md:text-[25px] font-bold">Get in touch</h2>
-    <form ref={form} onSubmit={sendEmail} className="contact w-[80%] flex flex-col">
+    <div>
+       <h2 className="contact-heading my-[25px]  md:text-[25px] text-white font-bold text-center">Get in touch</h2>
+       <div className="flex flex-col items-center lg:flex-row lg:justify-around lg:items-center lg:mx-[50px] mt-[30px] text-white " id="contact">
+    <form ref={form} onSubmit={sendEmail} className="contact w-[80%] flex flex-col lg:w-[35%]">
       <label className="text-[#FF00FF] text-sm mt-[20px] block mb-[5px]">Name</label>
       <input type="text" name="user_name"  onChange={()=>setNameInputValue(true)}  className={` rounded-md ${nameInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `}/>
       <label className="text-[#FF00FF] text-sm mt-[20px] block mb-[5px]">Email</label>
@@ -49,7 +50,7 @@ function Contact({setShowPopup}) {
            Send Message
         </button>
     </form>
-    <div className="socials flex gap-[20px] my-[10px] ">
+    {/* <div className="socials flex gap-[20px] my-[10px] ">
         <Link to="tel:8465842779"><img src={phoneImg} alt="" width={"20px"} className="cursor-pointer"/></Link>
          <Link to="mailto:ur66026@gmail.com">
            <img src={gmailImg} alt="Gmail" width={"20px"} className="cursor-pointer"/>
@@ -64,7 +65,9 @@ function Contact({setShowPopup}) {
          >
            <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
          </svg></Link>
-      </div>
+      </div> */}
+      <img src={svg} alt="thank-you" className="w-[80%] lg:w-[40%]" />
+    </div>
     </div>
   );
 }

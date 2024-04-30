@@ -10,9 +10,12 @@ import firebaseIcon from '../assets/firebase.png'
 import responsiveDesignIcon from '../assets/responsive.png'
 import { Link } from 'react-router-dom'
 import reactRouter from '../assets/react-router.svg'
+
 function Skills() {
   return (
+    
     <div className=' mt-[30px] flex flex-col items-center' id='skills'>
+      
       <h2 className="skills mb-[15px] text-white font-semibold md:text-[25px]">Skills</h2>
         <ul className=' w-[90%] flex gap-[40px] justify-center flex-wrap '>
             <Link to="https://developer.mozilla.org/en-US/docs/Web/HTML"><li className='animate-skill skill cursor-pointer py-[20px]'><img src={htmlIcon} alt="html" width={'30px'}  className='md:w-[50px]'/></li></Link>
@@ -26,6 +29,7 @@ function Skills() {
             <Link to="https://git-scm.com/doc"><li className='animate-skill skill cursor-pointer  py-[20px]'><img src={gitIcon} alt="git" width={'30px'}  className='md:w-[50px]'/></li></Link>
             <Link to="https://reactrouter.com/en/main"><li className='animate-skill skill cursor-pointer py-[25px] md:py-[30px]'><img src={reactRouter} alt="git" width={'30px'} className='md:w-[50px]' /></li></Link>
       </ul>
+      
       
     </div>
   )

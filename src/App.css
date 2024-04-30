@@ -15,14 +15,51 @@
       transform: translateX(0);
     }
   }
-  .animate-img-fall {
+  
+  .animate-img-fall,#my-img {
     animation: fallAnimation 1.5s ease forwards;
+   
   }
-  @media screen and (min-width : 1024px) {
-    .animate-img-fall {
+  
+  #my-img {
+    position: relative;
+    display: inline-block; 
+    width: fit-content; 
+    padding: 0.2px;
+    z-index: 900;
+    
+  }
+  
+  
+  #my-img::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(315deg, #00ccff, #d400d4);
+    border-radius: 50%;
+    animation: animate 4s linear infinite;
+    transform-origin: center;
+  }
+  
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @media screen and (min-width: 1024px) {
+    .animate-img-fall,#my-img {
       animation: myImageAnimation 1.5s ease forwards;
     }
   }
+  
   @keyframes raiseAnimation {
     0% {
         transform: scale(0);
@@ -179,3 +216,66 @@ textarea:not(:placeholder-shown) {
   border-image: linear-gradient(to right, #532aad, #b47bfe, #e25fff) 1;
  
 }
+/* .projects::after{
+  content: 'ertgrb';
+  width: 300px;
+  height: 45px;
+  color: grey;
+  background-color: #FF00FF;
+} */
+
+.project-image-container {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.project-image {
+  transition: transform 0.3s ease-in-out;
+}
+
+
+
+.project-image-container:hover .buttons,
+.project-image-container:hover p {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease-in-out;
+}
+.project-image-container:hover .project-image{
+  filter: brightness(20%);
+}
+
+.project-image-container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 80%;
+  height: 80%;
+  max-height: 60%;
+  overflow: auto;
+  padding: 20px;
+  border-radius: 10px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.buttons {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  
+}
+::-webkit-scrollbar {
+  width: 2px; 
+}
+::-webkit-scrollbar-thumb {
+  background:#de04de; 
+  border-radius: 5px; 
+}
+
+
