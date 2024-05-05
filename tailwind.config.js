@@ -4,12 +4,11 @@ export default {
   theme: {
     extend: {},
     screens: {
-      'sm': '425px',
-      'md': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
+      sm: '425px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
     },
   },
   plugins: [],
 }
-
