@@ -43,13 +43,13 @@ function Contact({ setShowPopup }) {
   }
 
   return (
-    <div>
+    <section id='contact'>
       <h2 className='contact-heading my-[25px]  md:text-[25px] text-white font-bold text-center'>
         Get in touch
       </h2>
       <div
         className='flex flex-col items-center  lg:flex-row lg:justify-around lg:items-center lg:mx-[50px] mt-[30px] text-white '
-        id='contact'
+        
       >
         <form
           ref={form}
@@ -89,7 +89,7 @@ function Contact({ setShowPopup }) {
         </form>
         <img src={svg} alt='thank-you' className='w-[80%] lg:w-[40%]' />
       </div>
-    </div>
+    </section>
   )
 }
 

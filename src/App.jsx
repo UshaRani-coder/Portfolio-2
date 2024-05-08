@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Link,
-  Outlet,
-} from 'react-router-dom'
+import { Route, Routes, } from 'react-router-dom'
+import { HashLink as Link} from 'react-router-hash-link';
 import Home from './pages/Home.jsx'
 import Hero from './components/Hero.jsx'
 import Work from './pages/Work.jsx'
@@ -13,76 +8,96 @@ import Skills from './pages/Skills.jsx'
 import Projects from './pages/Projects.jsx'
 import Testimonials from './pages/Testimonials.jsx'
 import Contact from './pages/Contact.jsx'
-import Layout from './components/Layout.jsx'
-import AnimatedBackground from './ui/AnimateBackground.jsx'
+import Navbar from './components/Navbar.jsx'
+
 
 function App() {
   const [toggle, setToggle] = useState(false)
-
+  
   useEffect(() => {
     const scrollToComponent = () => {
-      const hash = window.location.hash
+      const hash = window.location.hash;
+      console.log(hash);
       if (hash) {
-        const element = document.querySelector(hash)
-        if (element) {
-          element.scrollIntoView({ behavior: 'smooth' })
-        }
+        setTimeout(() => {
+          const element = document.querySelector(hash);
+          if (element) {
+            let navbarHeight = 0;
+            const navbar = document.querySelector('.navbar');
+            
+            if (navbar) {
+              navbarHeight = navbar.offsetHeight;
+            }
+            const offset = element.offsetTop - navbarHeight;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
+          }
+        }, 100);
       } else {
-        // If no hash is present, scroll to the top of the page
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
       }
-    }
-    scrollToComponent()
-  }, [])
+    };
+  
+    scrollToComponent();
+  
+   
+  }, [toggle]);
+  
+ 
 
   function handleClick() {
     setToggle((prev) => !prev)
   }
-
+  
+  
   return (
-    <Router>
+    
       <div className='bg-[#000000] text-white overflow-x-hidden'>
+        <Navbar
+          toggle={toggle}
+          setToggle={setToggle}
+          handleClick={handleClick}
+        />
         {toggle ? (
           <ul
-            className={`animate-hamburgerMenu ${
-              toggle ? '' : 'hide'
-            } w-[100%] h-screen absolute top-[0px] bottom-0  z-50 bg-[#1a1a1a] flex flex-col px-[60px] py-[40px] pt-[100px] gap-y-[10px] items-center cursor-pointer`}
+            className={`animate-hamburgerMenu  w-[100%] h-screen absolute top-[0px] bottom-0  z-50 bg-[#1a1a1a] flex flex-col px-[60px] py-[40px] pt-[100px] gap-y-[10px] items-center cursor-pointer`}
           >
-            <li className='section'>
-              <Link to='/' onClick={handleClick}>
+             <li className={`section ${activeSection === 'about' ? 'active' : ''}`}> 
+              <Link to='#'  scroll={el => el.scrollIntoView({ behavior: 'smooth' })} onClick={handleClick}>
                 Home
               </Link>
             </li>
-            <li className='section'>
-              <Link to='/about' onClick={handleClick}>
+            <li className={`section ${activeSection === 'about' ? 'active' : ''}`}>
+              <Link to='#about' scroll={el => el.scrollIntoView({ behavior: 'smooth' })}  onClick={handleClick}>
                 About
               </Link>
             </li>
             <li className='section'>
-              <Link to='/work' onClick={handleClick}>
+              <Link to='#work' scroll={el => el.scrollIntoView({ behavior: 'smooth' })}  onClick={handleClick}>
                 Work
               </Link>
             </li>
             <li className='section'>
-              <Link to='/skills' onClick={handleClick}>
+              <Link to='#skills' scroll={el => el.scrollIntoView({ behavior: 'smooth' })}  onClick={handleClick}>
                 Skills
               </Link>
             </li>
             <li className='section'>
-              <Link to='/projects' onClick={handleClick}>
+              <Link to='#projects' scroll={el => el.scrollIntoView({ behavior: 'smooth' })}  onClick={handleClick}>
                 Projects
               </Link>
             </li>
             <li className='section'>
-              <Link to='/testimonials' onClick={handleClick}>
+              <Link to='#testimonials' scroll={el => el.scrollIntoView({ behavior: 'smooth' })}  onClick={handleClick}>
                 Testimonials
               </Link>
             </li>
             <li className='section'>
-              <Link to='/contact' onClick={handleClick}>
+              <Link to='#contact' scroll={el => el.scrollIntoView({ behavior: 'smooth' })}  onClick={handleClick}>
                 Contact
               </Link>
-            </li>
+            </li> 
+           
+
             <svg
               xmlns='http://www.w3.org/2000/svg'
               width={'20px'}
@@ -95,8 +110,8 @@ function App() {
             </svg>
           </ul>
         ) : (
+          
           <Routes>
-            {/* <Route element={<Layout toggle={toggle} setToggle={setToggle} handleClick={handleClick}/>}> */}
             <Route
               path='/'
               element={
@@ -107,17 +122,16 @@ function App() {
                 />
               }
             />
-            <Route path='/about' element={<Hero id='about' />} />
+            <Route path='/about' element={<Hero />} />
             <Route path='/work' element={<Work />} />
-            <Route path='/skills' element={<Skills id='skills' />} />
+            <Route path='/skills' element={<Skills />} />
             <Route path='/projects' element={<Projects />} />
             <Route path='/testimonials' element={<Testimonials />} />
             <Route path='/contact' element={<Contact />} />
-            {/* </Route> */}
           </Routes>
         )}
       </div>
-    </Router>
+    
   )
 }
 

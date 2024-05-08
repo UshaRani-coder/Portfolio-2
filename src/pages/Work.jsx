@@ -4,12 +4,12 @@ import graphImg from '../assets/myprogress.png'
 
 function Work() {
   return (
-    <div
+    <section
       className='px-[10px] mt-[30px] flex flex-col items-center text-[rgb(181,187,198)] md:px-[50px] lg:px-[70px] lg:pt-[40px]'
       id='work'
     >
-      <div>
-        <h2 className='mb-[15px] work-exp text-white font-semibold md:text-[25px] text-center lg:text-start'>
+      {/* <div>
+        <h2 className=' mb-[15px] work-exp text-white font-semibold md:text-[25px] text-center lg:text-start'>
           Work Experience
         </h2>
         <p className='leading-[25px] md:leading-[35px]'>
@@ -25,14 +25,14 @@ function Work() {
           <span className='text-white font-semibold'>chat app</span> and a{' '}
           <span className='text-white font-semibold'>resume builder</span>.
         </p>
-      </div>
+      </div> */}
 
-      <div className='lg:flex lg:flex-row lg:items-center lg:gap-[20px]'>
+      <div className='lg:flex lg:flex-row lg:items-center  lg:gap-[20px]'>
         <div>
-          <h2 className='mt-[30px] mb-[15px] contributions text-white font-semibold md:text-[25px] text-center lg:text-start'>
-            Contributions
+          <h2 className='mt-[30px] mb-[15px] contributions text-white font-semibold md:text-[25px] text-center lg:text-start '>
+          Work Experience
           </h2>
-          <p className='leading-[25px] md:leading-[35px]'>
+          {/* <p className='leading-[25px] md:leading-[35px]'>
             I've been actively involved in{' '}
             <span className='text-white font-semibold'>contributing</span> to
             the{' '}
@@ -53,7 +53,29 @@ function Work() {
             <span className='text-white font-semibold'>dedication</span> and{' '}
             <span className='text-white font-semibold'>commitment</span> to our
             projects.
-          </p>
+          </p> */}
+          <p className='leading-[25px] md:leading-[35px]'>
+    I've been actively involved in{' '}
+    <span className='text-white font-semibold'>contributing</span> to <Link
+        to='https://inspirationapp.org/'
+        className='text-[#319bef] underline'
+    >
+        Inspiration App
+    </Link>{' '}
+    since <span className='text-white font-semibold'>January</span>. My
+    contributions include{' '}
+    <span className='text-white font-semibold'>leading</span> the
+    development of the{' '}
+    <span className='text-white font-semibold'>resume builder</span>{' '}
+    feature, which has become an integral part of the platform. I've also played a significant role in enhancing the application's <span className='text-white font-semibold'>state management</span> with{' '}
+    <span className='text-white font-semibold'>Redux</span>. The{' '}
+    <span className='text-white font-semibold'>contribution graph</span>{' '}
+    below showcases my{' '}
+    <span className='text-white font-semibold'>dedication</span> and{' '}
+    <span className='text-white font-semibold'>commitment</span> to our
+    projects.
+</p>
+
         </div>
         <img
           src={graphImg}
@@ -75,7 +97,7 @@ function Work() {
         </span>
         .
       </p>
-    </div>
+    </section>
   )
 }
 

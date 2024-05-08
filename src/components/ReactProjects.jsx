@@ -9,17 +9,19 @@ import reactRouter from '../assets/react-router.svg'
 import { Link } from 'react-router-dom'
 function ReactProjects({ setReactClick }) {
   return (
-    <div className='mt-[50px] text-[14px] md:text-[16px] flex flex-col items-center xl:flex-row xl:justify-around  relative text-[rgb(181,187,198)]'>
+    <section className='mt-[50px] text-[14px] md:text-[16px] flex flex-col items-center xl:flex-row xl:justify-around  relative text-[rgb(181,187,198)]' id='projects'>
+
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
         fill='#FF00FF'
         width={'20px'}
-        className='absolute top-[-35px] left-[40px]  cursor-pointer'
+        className='absolute top-[-35px] left-[130px]  cursor-pointer'
         onClick={() => setReactClick(false)}
       >
         <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
       </svg>
+      
       <div className='flex flex-col items-center lg:flex-row items-center gap-y-[30px] lg:flex-row lg:items-center lg:justify-around'>
         <div className='react-project w-[80%]   md:w-[50%] lg:w-[30%]  '>
           <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
@@ -174,7 +176,7 @@ function ReactProjects({ setReactClick }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import nandanImg from '../assets/nandan.jpg'
 function Testimonials() {
   return (
-    <div className='mt-[30px] flex flex-col items-center ' id='testimonials'>
+    <section className='mt-[30px] flex flex-col items-center' id='testimonials'>
       <h1 className='testimonials md:text-[25px] text-white font-bold'>
         Testimonial
       </h1>
@@ -37,8 +37,10 @@ function Testimonials() {
                 backgroundPosition: 'center',
                 backgroundSize: '100%',
                 backgroundRepeat: 'no-repeat',
+                border: '4px solid #FF00FF',
+  
               }}
-              className='w-[50px] lg:w-[100px] lg:h-[100px] h-[50px] rounded-full'
+              className='w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] h-[50px] rounded-full'
             ></div>
           </Link>
           <div className='flex flex-col  items-center sm:mt-[30px] sm:mt-[0px] lg:mt-0'>
@@ -64,7 +66,7 @@ function Testimonials() {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -16,17 +16,18 @@ import jsIcon from '../assets/js.png'
 import { Link } from 'react-router-dom'
 function JsProjects({ setJsClick }) {
   return (
-    <div className=' mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative'>
+    <section className=' mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative' id='projects'>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
         fill='#FF00FF'
         width={'20px'}
-        className='absolute top-[-40px] left-[40px]  cursor-pointer'
+        className='absolute top-[-10px] left-[40px]  cursor-pointer'
         onClick={() => setJsClick(false)}
       >
         <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
       </svg>
+      
       {/* <h1 className="project-name   text-center mb-[10px] md:text-[20px]">
         All made with
       </h1>
@@ -56,7 +57,7 @@ function JsProjects({ setJsClick }) {
           />
         </Link>
       </div> */}
-      <div className='flex flex-col  items-center gap-y-[30px] lg:flex-row lg:items-center lg:max-w-[1024px] lg:flex-wrap lg:gap-[40px] lg:mx-[30px]'>
+      <div className='flex flex-col  items-center gap-y-[30px] lg:flex-row lg:items-center lg:max-w-[1024px] lg:flex-wrap lg:gap-[40px] lg:mx-[30px] mt-[30px]'>
         <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
           <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
             Expense Tracker
@@ -599,7 +600,7 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

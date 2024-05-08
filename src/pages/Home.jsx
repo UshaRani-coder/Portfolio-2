@@ -15,7 +15,7 @@ function Home(props) {
   const [showPopup, setShowPopup] = useState(false)
   
   return (
-    <div className='home relative z-50 md:text-[20px] md:tracking-wider text-[rgb(181,187,198)]'>
+    <section className='home relative z-50 md:text-[20px] md:tracking-wider text-[rgb(181,187,198)]' id='home'>
       {/* <GlowingStarsBackgroundCard  /> */}
       <AnimatedBackground />
       <Navbar {...props} />
@@ -26,7 +26,7 @@ function Home(props) {
       <Projects />
       <Testimonial />
       <Contact setShowPopup={setShowPopup} />
-    </div>
+    </section>
   )
 }
 
