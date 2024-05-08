@@ -1,31 +1,24 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import graphImg from '../assets/myprogress.png'
 
 function Work() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    
+      setLoading(false); 
+  }, []);
+
+  if (loading) {
+    return null; // Render nothing while loading to prevent flickering
+  }
   return (
     <section
       className='px-[10px] mt-[30px] flex flex-col items-center text-[rgb(181,187,198)] md:px-[50px] lg:px-[70px] lg:pt-[40px]'
       id='work'
     >
-      {/* <div>
-        <h2 className=' mb-[15px] work-exp text-white font-semibold md:text-[25px] text-center lg:text-start'>
-          Work Experience
-        </h2>
-        <p className='leading-[25px] md:leading-[35px]'>
-          I've crafted 10+ mini projects in{' '}
-          <span className='text-white font-semibold'>HTML, CSS</span>, and{' '}
-          <span className='text-white font-semibold'>JavaScript</span>, refining
-          my{' '}
-          <span className='text-white font-semibold'>
-            frontend & JavaScript skills
-          </span>
-          . Additionally, I've led development on two{' '}
-          <span className='text-white font-semibold'>React</span> projects—a{' '}
-          <span className='text-white font-semibold'>chat app</span> and a{' '}
-          <span className='text-white font-semibold'>resume builder</span>.
-        </p>
-      </div> */}
+      
 
       <div className='lg:flex lg:flex-row lg:items-center  lg:gap-[20px]'>
         <div>

@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useRef, useState, useEffect } from 'react'
 import emailjs from '@emailjs/browser'
 import { toast } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
@@ -8,6 +8,17 @@ function Contact({ setShowPopup }) {
   const [emailInputValue, setEmailInputValue] = useState(false)
   const [messageInputValue, setMessageInputValue] = useState(false)
   const form = useRef()
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+   
+      setLoading(false); 
+    
+  }, []);
+
+  if (loading) {
+    return null; // Render nothing while loading to prevent flickering
+  }
 
   const sendEmail = (e) => {
     e.preventDefault()

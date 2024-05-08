@@ -1,7 +1,17 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import nandanImg from '../assets/nandan.jpg'
 function Testimonials() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+   
+      setLoading(false); 
+  }, []);
+
+  if (loading) {
+    return null; // Render nothing while loading to prevent flickering
+  }
   return (
     <section className='mt-[30px] flex flex-col items-center' id='testimonials'>
       <h1 className='testimonials md:text-[25px] text-white font-bold'>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import htmlIcon from '../assets/html-5.png'
 import cssIcon from '../assets/css-3.png'
 import jsIcon from '../assets/js.png'
@@ -12,7 +12,19 @@ import { Link } from 'react-router-dom'
 import reactRouter from '../assets/react-router.svg'
 
 function Skills() {
+  const [loading, setLoading] = useState(true);
 
+  useEffect(() => {
+   
+      setLoading(false); 
+    
+
+    
+  }, []);
+
+  if (loading) {
+    return null; // Render nothing while loading to prevent flickering
+  }
   return (
    
     <section className=' mt-[30px] flex flex-col items-center' id='skills' >

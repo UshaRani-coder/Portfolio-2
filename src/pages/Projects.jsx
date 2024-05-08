@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import ReactProjects from '../components/ReactProjects.jsx'
 import JsProjects from '../components/JsProjects.jsx'
 import reactIcon from '../assets/atom.png'
@@ -6,6 +6,17 @@ import jsIcon from '../assets/js.png'
 function Projects() {
   const [reactClick, setReactClick] = useState(false)
   const [jsClick, setJsClick] = useState(false)
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    
+      setLoading(false); 
+    
+  }, []);
+
+  if (loading) {
+    return null; // Render nothing while loading to prevent flickering
+  }
   return (
     <section className='mt-[30px] flex flex-col items-center' id='projects'>
       <h1 className='projects text-white font-semibold md:text-[25px]'>
