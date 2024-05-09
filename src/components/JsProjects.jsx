@@ -16,7 +16,10 @@ import jsIcon from '../assets/js.png'
 import { Link } from 'react-router-dom'
 function JsProjects({ setJsClick }) {
   return (
-    <section className=' mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative' id='projects'>
+    <section
+      className=' mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative'
+      id='projects'
+    >
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
@@ -27,7 +30,7 @@ function JsProjects({ setJsClick }) {
       >
         <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
       </svg>
-      
+
       {/* <h1 className="project-name   text-center mb-[10px] md:text-[20px]">
         All made with
       </h1>
@@ -543,18 +546,6 @@ function JsProjects({ setJsClick }) {
             </Link>
           </div>
         </div>
-        {/* <div className="buttons flex gap-[20px] mb-[25px]">
-        <Link to="https://github.com/UshaRani-coder/JS_Countdown_UR">
-          <button className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow">
-            Source Code
-          </button>
-        </Link>
-        <Link to="https://js-countdown-ur-rouge.vercel.app/">
-          <button className="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow">
-            Live Link
-          </button>
-        </Link>
-      </div> */}
         <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
           <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
             Word Counter

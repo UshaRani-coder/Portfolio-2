@@ -9,19 +9,21 @@ import reactRouter from '../assets/react-router.svg'
 import { Link } from 'react-router-dom'
 function ReactProjects({ setReactClick }) {
   return (
-    <section className='mt-[50px] text-[14px] md:text-[16px] flex flex-col items-center xl:flex-row xl:justify-around  relative text-[rgb(181,187,198)]' id='projects'>
-
+    <section
+      className='mt-[50px] text-[14px] md:text-[16px] flex flex-col items-center xl:flex-row xl:justify-around  relative text-[rgb(181,187,198)]'
+      id='projects'
+    >
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
         fill='#FF00FF'
         width={'20px'}
-        className='absolute top-[-35px] left-[130px]  cursor-pointer'
+        className='absolute top-[-35px] left-[30px] md:left-[100px] lg:left-[130px]  cursor-pointer'
         onClick={() => setReactClick(false)}
       >
         <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
       </svg>
-      
+
       <div className='flex flex-col items-center lg:flex-row items-center gap-y-[30px] lg:flex-row lg:items-center lg:justify-around'>
         <div className='react-project w-[80%]   md:w-[50%] lg:w-[30%]  '>
           <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
@@ -32,11 +34,12 @@ function ReactProjects({ setReactClick }) {
             alt='resume-builder'
             className='w-[100%]  rounded-lg '
           />{' '}
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
-            Made as a team. I was responsible for the designing the{' '}
+          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px] h-[180px] max-h-[180px] overflow-y-auto'>
+            Made as a team. I was responsible for designing the{' '}
             <span className='text-white font-bold'>
-              layout,responsiveness,implementing Redux Toolkit , dynamic
-              progressive skill-bar
+              layout for Desktop-view,responsiveness,implementing Redux
+              Toolkit,styling the data that comes from redux according to all
+              the individual templates, dynamic progressive skill-bar
             </span>
             ,Implemented{' '}
             <span className='text-white font-bold'>
@@ -44,6 +47,10 @@ function ReactProjects({ setReactClick }) {
             </span>{' '}
             and designed the{' '}
             <span className='text-white font-bold'>preview page</span>
+            <br />
+            <span className='text-white font-bold'>PS</span>: As of now, You can
+            only "Create a New Resume", the functionality to "Add your Resume"
+            is in progress right now
           </p>{' '}
           <p className='flex items-center justify-center mt-[20px] gap-[20px]'>
             <Link to='https://react.dev/'>
@@ -80,7 +87,7 @@ function ReactProjects({ setReactClick }) {
             </Link>
           </p>
           <div className=' flex mt-[20px]   justify-center mt-[40px] gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/SiddheshAR/resume_builder'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -92,7 +99,7 @@ function ReactProjects({ setReactClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://resume-builder-22l6jeoa7-ur66026gmailcoms-projects.vercel.app'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -106,7 +113,7 @@ function ReactProjects({ setReactClick }) {
             </Link>
           </div>
         </div>
-        <div className='w-[80%] react-project md:w-[50%] lg:w-[30%] lg:py-[40px] '>
+        <div className='w-[80%] react-project md:w-[50%] lg:w-[30%] lg:py-[50px] '>
           <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
             ChatVerse
           </h1>
@@ -149,7 +156,7 @@ function ReactProjects({ setReactClick }) {
             </Link>
           </p>
           <div className=' flex mt-[20px] justify-center mt-[40px] gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/Chat-Application'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -161,7 +168,7 @@ function ReactProjects({ setReactClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://chat-application-lyyj.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

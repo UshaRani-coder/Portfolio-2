@@ -8,16 +8,14 @@ function Contact({ setShowPopup }) {
   const [emailInputValue, setEmailInputValue] = useState(false)
   const [messageInputValue, setMessageInputValue] = useState(false)
   const form = useRef()
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-   
-      setLoading(false); 
-    
-  }, []);
+    setLoading(false)
+  }, [])
 
   if (loading) {
-    return null; // Render nothing while loading to prevent flickering
+    return null
   }
 
   const sendEmail = (e) => {
@@ -58,10 +56,7 @@ function Contact({ setShowPopup }) {
       <h2 className='contact-heading my-[25px]  md:text-[25px] text-white font-bold text-center'>
         Get in touch
       </h2>
-      <div
-        className='flex flex-col items-center  lg:flex-row lg:justify-around lg:items-center lg:mx-[50px] mt-[30px] text-white '
-        
-      >
+      <div className='flex flex-col items-center  lg:flex-row lg:justify-around lg:items-center lg:mx-[50px] mt-[30px] text-white '>
         <form
           ref={form}
           onSubmit={sendEmail}

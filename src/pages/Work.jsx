@@ -1,34 +1,30 @@
-import React,{useState,useEffect} from 'react'
+import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import graphImg from '../assets/myprogress.png'
 
 function Work() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    
-      setLoading(false); 
-  }, []);
+    setLoading(false)
+  }, [])
 
   if (loading) {
-    return null; // Render nothing while loading to prevent flickering
+    return null
   }
   return (
     <section
       className='px-[10px] mt-[30px] flex flex-col items-center text-[rgb(181,187,198)] md:px-[50px] lg:px-[70px] lg:pt-[40px]'
       id='work'
     >
-      
-
       <div className='lg:flex lg:flex-row lg:items-center  lg:gap-[20px]'>
         <div>
           <h2 className='mt-[30px] mb-[15px] contributions text-white font-semibold md:text-[25px] text-center lg:text-start '>
-          Work Experience
+            Work Experience
           </h2>
-          {/* <p className='leading-[25px] md:leading-[35px]'>
+          <p className='leading-[25px] md:leading-[35px]'>
             I've been actively involved in{' '}
-            <span className='text-white font-semibold'>contributing</span> to
-            the{' '}
+            <span className='text-white font-semibold'>contributing</span> to{' '}
             <Link
               to='https://inspirationapp.org/'
               className='text-[#319bef] underline'
@@ -40,35 +36,16 @@ function Work() {
             <span className='text-white font-semibold'>leading</span> the
             development of the{' '}
             <span className='text-white font-semibold'>resume builder</span>{' '}
-            feature, which has become an integral part of the platform. The{' '}
+            feature, which has become an integral part of the platform. I've
+            also played a significant role in enhancing the application's{' '}
+            <span className='text-white font-semibold'>state management</span>{' '}
+            with <span className='text-white font-semibold'>Redux</span>. The{' '}
             <span className='text-white font-semibold'>contribution graph</span>{' '}
             below showcases my{' '}
             <span className='text-white font-semibold'>dedication</span> and{' '}
             <span className='text-white font-semibold'>commitment</span> to our
             projects.
-          </p> */}
-          <p className='leading-[25px] md:leading-[35px]'>
-    I've been actively involved in{' '}
-    <span className='text-white font-semibold'>contributing</span> to <Link
-        to='https://inspirationapp.org/'
-        className='text-[#319bef] underline'
-    >
-        Inspiration App
-    </Link>{' '}
-    since <span className='text-white font-semibold'>January</span>. My
-    contributions include{' '}
-    <span className='text-white font-semibold'>leading</span> the
-    development of the{' '}
-    <span className='text-white font-semibold'>resume builder</span>{' '}
-    feature, which has become an integral part of the platform. I've also played a significant role in enhancing the application's <span className='text-white font-semibold'>state management</span> with{' '}
-    <span className='text-white font-semibold'>Redux</span>. The{' '}
-    <span className='text-white font-semibold'>contribution graph</span>{' '}
-    below showcases my{' '}
-    <span className='text-white font-semibold'>dedication</span> and{' '}
-    <span className='text-white font-semibold'>commitment</span> to our
-    projects.
-</p>
-
+          </p>
         </div>
         <img
           src={graphImg}

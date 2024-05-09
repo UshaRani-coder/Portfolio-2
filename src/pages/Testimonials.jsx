@@ -2,15 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import nandanImg from '../assets/nandan.jpg'
 function Testimonials() {
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-   
-      setLoading(false); 
-  }, []);
+    setLoading(false)
+  }, [])
 
   if (loading) {
-    return null; // Render nothing while loading to prevent flickering
+    return null
   }
   return (
     <section className='mt-[30px] flex flex-col items-center' id='testimonials'>
@@ -48,7 +47,6 @@ function Testimonials() {
                 backgroundSize: '100%',
                 backgroundRepeat: 'no-repeat',
                 border: '4px solid #FF00FF',
-  
               }}
               className='w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] h-[50px] rounded-full'
             ></div>

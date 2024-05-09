@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
 import { HashLink as Link } from 'react-router-hash-link'
 import Home from './pages/Home.jsx'
-import Hero from './components/Hero.jsx'
+import About from './pages/About.jsx'
 import Work from './pages/Work.jsx'
 import Skills from './pages/Skills.jsx'
 import Projects from './pages/Projects.jsx'
@@ -12,9 +12,6 @@ import Navbar from './components/Navbar.jsx'
 
 function App() {
   const [toggle, setToggle] = useState(false)
-  
-
-  
 
   useEffect(() => {
     const scrollToComponent = () => {
@@ -37,7 +34,6 @@ function App() {
       } else {
         window.scrollTo(0, 0)
       }
-      // setLoading(false);
     }
 
     scrollToComponent()
@@ -143,15 +139,12 @@ function App() {
                 />
               }
             />
-            <Route path='/about' element={<Hero  />} />
-            <Route path='/work' element={<Work  />} />
-            <Route path='/skills' element={<Skills  />} />
-            <Route path='/projects' element={<Projects  />} />
-            <Route
-              path='/testimonials'
-              element={<Testimonials  />}
-            />
-            <Route path='/contact' element={<Contact  />} />
+            <Route path='/about' element={<About />} />
+            <Route path='/work' element={<Work />} />
+            <Route path='/skills' element={<Skills />} />
+            <Route path='/projects' element={<Projects />} />
+            <Route path='/testimonials' element={<Testimonials />} />
+            <Route path='/contact' element={<Contact />} />
           </Routes>
         )}
       </>

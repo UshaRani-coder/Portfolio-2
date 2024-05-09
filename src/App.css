@@ -1,6 +1,4 @@
-
-
-/* @keyframes fallAnimation {
+@keyframes fallAnimation {
   0% {
     transform: translateY(-10%);
   }
@@ -15,8 +13,7 @@
   100% {
     transform: translateX(0);
   }
-} */
-
+}
 
 #my-img {
   animation: fallAnimation 1.5s ease forwards;
@@ -29,7 +26,6 @@
   padding: 0.2px;
   z-index: 0;
 }
-
 
 #my-img::before {
   content: '';
@@ -62,9 +58,9 @@
     transform: scale(1);
   }
 }
-/* .animate-content {
+.animate-content {
   animation: raiseAnimation 1.5s ease forwards;
-} */
+}
 
 .name,
 .role {
@@ -113,25 +109,30 @@
   position: relative;
   display: inline-block;
 }
-.contributions{
+.contributions {
   margin-left: 20%;
 }
 
-.contact-heading{
+.contact-heading {
   letter-spacing: 5px;
   position: relative;
   display: inline-block;
   margin-left: 30%;
 }
 
-.work-exp::after,.contributions::after,.skills::after,.projects::after,.testimonials::after,.contact-heading::after{
+.work-exp::after,
+.contributions::after,
+.skills::after,
+.projects::after,
+.testimonials::after,
+.contact-heading::after {
   content: '';
   position: absolute;
   left: 20%;
-  bottom: -5px; /* Adjust this value to control the distance between text and border */
+  bottom: -5px;
   width: 50%;
-  height: 2px; /* Adjust the thickness of the border */
-  background-color: #ff00ff; /* Customize the border color */
+  height: 2px;
+  background-color: #ff00ff;
   border-radius: 25%;
 }
 
@@ -140,11 +141,11 @@
 .js-project,
 .testimonial,
 .contact {
-  background-color: #1e1e1e; 
-  border-radius: 10px; 
+  background-color: #1e1e1e;
+  border-radius: 10px;
   box-shadow:
     5px 5px 10px #0f0f0f,
-    -5px -5px 10px #333; 
+    -5px -5px 10px #333;
   margin: 10px 0;
   padding: 30px;
 }
@@ -233,7 +234,6 @@ textarea:not(:placeholder-shown) {
   border-image: linear-gradient(to right, #532aad, #b47bfe, #e25fff) 1;
 }
 
-
 .project-image-container {
   position: relative;
   overflow: hidden;
@@ -310,32 +310,32 @@ textarea:not(:placeholder-shown) {
   }
 }
 
-@media screen and (min-width:375px){
-  .contributions{
+@media screen and (min-width: 375px) {
+  .contributions {
     margin-left: 25%;
   }
 }
-@media screen and (min-width:768px){
-  .contributions{
+@media screen and (min-width: 768px) {
+  .contributions {
     margin-left: 30%;
   }
-  .contact-heading{
+  .contact-heading {
     margin-left: 38%;
   }
 }
-@media screen and (min-width:1024px){
-  .contributions{
+@media screen and (min-width: 1024px) {
+  .contributions {
     margin-left: 0px;
   }
-  .contact-heading{
+  .contact-heading {
     margin-left: 42%;
   }
   #my-img {
     animation: myImageAnimation 1.5s ease forwards;
   }
 }
-.active{
-  color: #FF00FF;
+.active {
+  color: #ff00ff;
   text-decoration: underline;
   text-underline-offset: 8px;
 }
