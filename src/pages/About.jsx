@@ -18,7 +18,7 @@ function About() {
 
   return (
     <section
-      className='p-[10px] lg:px-[40px] flex flex-col-reverse lg:flex-row-reverse lg:justify-center lg:items-center xl:gap-[50px] pt-[50px] md:pt-[60px]  items-center text-[rgb(181,187,198)]'
+      className='p-[10px] lg:px-[40px] flex flex-col-reverse lg:flex-row-reverse lg:justify-center lg:items-center xl:gap-[50px] pt-[60px]   items-center text-[rgb(181,187,198)]'
       id='about'
     >
       <div className='animate-content  flex flex-col items-center pt-[20px] lg:pt-0'>
@@ -41,7 +41,7 @@ function About() {
         <div className='flex flex-col items-center md:flex-row md:gap-[70px]'>
           <div className='mt-[10px]'>
             <a
-              href='https://drive.google.com/file/d/1vb1TLTA99caHUvyMWwCv00xyCTeNRrpt/view?usp=sharing'
+              href='https://drive.google.com/file/d/1U4olDE49DqDLP0PappfOCZE-viXDnkn_/view?usp=drive_link'
               download='Usha Resume.pdf'
             >
               <div className='text-[14px] border border-[#FF00FF] rounded-full p-[10px] w-[130px] md:w-[150px] flex items-center justify-between'>
@@ -101,7 +101,7 @@ function About() {
         <img
           src={ushaRaniImg}
           alt='person'
-          className='animate-img-fall rounded-full w-[100px] lg:w-[350px]'
+          className='animate-img-fall rounded-full  w-[100px] lg:w-[350px]'
         />
       </div>
     </section>
