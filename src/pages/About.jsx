@@ -101,7 +101,7 @@ function About() {
         <img
           src={ushaRaniImg}
           alt='person'
-          className='animate-img-fall rounded-full  w-[100px] lg:w-[350px]'
+          className='animate-img-fall rounded-full  w-[100px] lg:w-[350px] h-[100px]'
         />
       </div>
     </section>
