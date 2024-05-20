@@ -125,7 +125,7 @@ function JsProjects({ setJsClick }) {
             </span>
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Music-Player_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -137,7 +137,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-music-player-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -169,7 +169,7 @@ function JsProjects({ setJsClick }) {
             </span>
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Typing-Game_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -181,7 +181,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-typing-game-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -220,7 +220,7 @@ function JsProjects({ setJsClick }) {
             feedback to the user.
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Form-Validation_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -232,7 +232,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-form-validation-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -268,7 +268,7 @@ function JsProjects({ setJsClick }) {
             .
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Calculator_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -280,7 +280,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-calculator-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -313,7 +313,7 @@ function JsProjects({ setJsClick }) {
             <span className='text-white font-bold'>event handling.</span>
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Memory-card-game_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -325,7 +325,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-memory-card-game-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -358,7 +358,7 @@ function JsProjects({ setJsClick }) {
             updating the display accordingly.
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Stopwatch_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -370,7 +370,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-stopwatch-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -407,7 +407,7 @@ function JsProjects({ setJsClick }) {
             </span>
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_To-do-App_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -419,7 +419,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-to-do-app-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -463,7 +463,7 @@ function JsProjects({ setJsClick }) {
             <span className='text-white font-bold'>random color</span>
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Color-Guessing-game-UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -475,7 +475,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-color-guessing-game-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -520,7 +520,7 @@ function JsProjects({ setJsClick }) {
             <span className='text-white font-bold'>correctly.</span>
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Countdown_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -532,7 +532,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-countdown-ur-rouge.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -564,7 +564,7 @@ function JsProjects({ setJsClick }) {
             the corresponding span elements with the word and character counts.
           </p>
           <div className='buttons flex gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/UshaRani-coder/JS_Expense-tracker_UR'>
+            <Link to='https://github.com/UshaRani-coder/JS_Word-Count_UR'>
               <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -576,7 +576,7 @@ function JsProjects({ setJsClick }) {
                 </svg>
               </button>
             </Link>
-            <Link to='https://js-expense-tracker-ur.vercel.app/'>
+            <Link to='https://js-word-count-ur.vercel.app/'>
               <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

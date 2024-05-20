@@ -17,8 +17,7 @@
 
 #my-img {
   background: linear-gradient(315deg, #00ccff, #d400d4);
-  animation: animate 4s linear infinite, fallAnimation 1.5s ease forwards;
-  transform-origin: center;
+  animation:fallAnimation 1.5s ease forwards;
   display: inline-block;
   padding: 10px;
   border-radius: 40px;
