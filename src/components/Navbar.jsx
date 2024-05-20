@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
+import {Link as Reflink} from 'react-router-dom'
 
 function Navbar(props) {
   const [itemToggle, setItemToggle] = useState(false)
@@ -54,7 +55,7 @@ function Navbar(props) {
   }, [])
   return (
     <div className='navbar flex w-full justify-between items-center bg-white-800 backdrop-blur-md shadow-lg shadow-black/[0.03] p-[10px] fixed top-0 z-50'>
-      <span className='logo'>UR</span>
+      <span className='logo cursor-pointer'><Reflink to='https://usha-portfolio-website.vercel.app/'>UR</Reflink></span>
       <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
