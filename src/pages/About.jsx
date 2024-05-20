@@ -44,7 +44,7 @@ function About() {
         <div className='flex flex-col items-center md:flex-row md:gap-[70px]'>
           <div className='mt-[10px]'>
             <a
-              href='https://drive.google.com/file/d/1U4olDE49DqDLP0PappfOCZE-viXDnkn_/view?usp=drive_link'
+              href='https://drive.google.com/file/d/1U4olDE49DqDLP0PappfOCZE-viXDnkn_/view'
               download='Usha Resume.pdf'
             >
               <div className='text-[14px] border border-[#FF00FF] rounded-full p-[10px] w-[130px] md:w-[150px] flex items-center justify-between'>
