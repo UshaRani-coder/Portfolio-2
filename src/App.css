@@ -47,9 +47,10 @@
     transform: scale(1);
   }
 }
-.animate-content {
+ .animate-content {
   animation: raiseAnimation 1.5s ease forwards;
-}
+  
+} 
 
 .name,
 .role {
