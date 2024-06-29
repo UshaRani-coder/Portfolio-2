@@ -46,13 +46,13 @@ function Testimonials() {
                 backgroundPosition: 'center',
                 backgroundSize: '100%',
                 backgroundRepeat: 'no-repeat',
-                border: '4px solid #FF00FF',
+                border: '4px solid #389db6',
               }}
               className='w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] h-[50px] rounded-full'
             ></div>
           </Link>
           <div className='flex flex-col  items-center sm:mt-[30px] sm:mt-[0px] lg:mt-0'>
-            <h2 className='Mentor text-lg text-[#FF00FF] sm:mr-[130px] lg:mr-0 lg:text-xl'>
+            <h2 className='Mentor text-lg text-[#389db6] font-bold sm:mr-[130px] lg:mr-0 lg:text-xl'>
               Nandan G N
             </h2>
             <span className='text-[10px] text-center w-[230px] sm:text-start text-white lg:text-center'>

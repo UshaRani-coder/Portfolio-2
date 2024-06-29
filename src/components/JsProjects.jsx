@@ -1,26 +1,23 @@
 import React from 'react'
-import countdownImg from '../assets/Screenshot 2024-04-20 223132.png'
-import musicPlayerImg from '../assets/Screenshot 2024-04-20 222513.png'
-import stopWatchImg from '../assets/Screenshot 2024-04-20 222147.png'
+import countdownImg from '../assets/countdown.png'
+import musicPlayerImg from '../assets/music-player.png'
+import stopWatchImg from '../assets/stopwatch.png'
 import calculatorImg from '../assets/calculator.png'
 import formValidationImg from '../assets/form-validation.png'
-import wordCounterImg from '../assets/word-count.png'
-import memoryGameImg from '../assets/memory-game.png'
-import typingGame from '../assets/Screenshot 2024-04-20 212740.png'
-import toDoListImg from '../assets/Screenshot 2024-04-20 213139.png'
-import expenseTrackerImg from '../assets/expense.png'
-import colorGuessingImg from '../assets/colorGuessing-2.png'
-import htmlIcon from '../assets/html-5.png'
-import cssIcon from '../assets/css-3.png'
-import jsIcon from '../assets/js.png'
+import wordCounterImg from '../assets/word-counter.png'
+import memoryGameImg from '../assets/memory-card-game.png'
+import typingGame from '../assets/typing-speed-game.png'
+import toDoListImg from '../assets/todo.png'
+import expenseTrackerImg from '../assets/expense-tracker.png'
+import colorGuessingImg from '../assets/color-guessing-game.png'
 import { Link } from 'react-router-dom'
-function JsProjects({ setJsClick }) {
+function JsProjects() {
   return (
     <section
       className=' mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative'
       id='projects'
     >
-      <svg
+      {/* <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
         fill='#FF00FF'
@@ -29,7 +26,7 @@ function JsProjects({ setJsClick }) {
         onClick={() => setJsClick(false)}
       >
         <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
-      </svg>
+      </svg> */}
 
       {/* <h1 className="project-name   text-center mb-[10px] md:text-[20px]">
         All made with
@@ -61,8 +58,8 @@ function JsProjects({ setJsClick }) {
         </Link>
       </div> */}
       <div className='flex flex-col  items-center gap-y-[30px] lg:flex-row lg:items-center lg:max-w-[1024px] lg:flex-wrap lg:gap-[40px] lg:mx-[30px] mt-[30px]'>
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Expense Tracker
           </h1>
           <img
@@ -70,7 +67,7 @@ function JsProjects({ setJsClick }) {
             alt='expense-tracker'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto '>
             Dynamic webpage with Tailwind CSS utilizes{' '}
             <span className='text-white font-bold'>local storage</span> for
             finance tracking.
@@ -108,8 +105,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Music Player
           </h1>
           <img
@@ -117,7 +114,7 @@ function JsProjects({ setJsClick }) {
             alt='music-player'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             Dynamic music player with{' '}
             <span className='text-white font-bold'>
               play, pause, next, and previous controls. Displays song details,
@@ -152,8 +149,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Typing Speed Game
           </h1>
           <img
@@ -161,7 +158,7 @@ function JsProjects({ setJsClick }) {
             alt='typing-game'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             The project involves a typing speed test application with{' '}
             <span className='text-white font-bold'>
               dynamic paragraph rendering. It tracks words per minute (WPM),
@@ -196,8 +193,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Form Validation
           </h1>
           <img
@@ -205,7 +202,7 @@ function JsProjects({ setJsClick }) {
             alt='form-validation'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             It{' '}
             <span className='text-white font-bold'>
               checks for blank inputs, valid email format, password complexity,
@@ -247,8 +244,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Calculator
           </h1>
           <img
@@ -256,7 +253,7 @@ function JsProjects({ setJsClick }) {
             alt='calculator'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             A calculator with{' '}
             <span className='text-white font-bold'>
               input, delete, reset, and result
@@ -295,8 +292,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Memory Game
           </h1>
           <img
@@ -304,7 +301,7 @@ function JsProjects({ setJsClick }) {
             alt='Memory Game'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             A memory game with{' '}
             <span className='text-white font-bold'>
               flipping cards, matching images, and congratulatory alerts
@@ -340,8 +337,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Stop Watch
           </h1>
           <img
@@ -349,7 +346,7 @@ function JsProjects({ setJsClick }) {
             alt='stop-watch'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             A stopwatch with hours, minutes, seconds, and milliseconds displayed
             in 00 format. Functions manage{' '}
             <span className='text-white font-bold'>
@@ -385,8 +382,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             To-Do List
           </h1>
           <img
@@ -394,7 +391,7 @@ function JsProjects({ setJsClick }) {
             alt='to-do'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             This project lets users to{' '}
             <span className='text-white font-bold'>
               add, edit, and delete tasks
@@ -434,8 +431,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project  md:w-[50%] lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project  md:w-[50%] lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Color Guessing Game
           </h1>
           <img
@@ -443,7 +440,7 @@ function JsProjects({ setJsClick }) {
             alt='color-guessingr'
             className='w-[100%]  rounded-lg project-image '
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             This project{' '}
             <span className='text-white font-bold'>
               generates random RGB color and displays it along with colored
@@ -490,8 +487,8 @@ function JsProjects({ setJsClick }) {
           </div>
         </div>
 
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Birthday Countdown
           </h1>
           <img
@@ -499,7 +496,7 @@ function JsProjects({ setJsClick }) {
             alt='countdown'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             This project{' '}
             <span className='text-white font-bold'>
               prompts the user to enter their birthdate in the 'year-month-day'
@@ -546,8 +543,8 @@ function JsProjects({ setJsClick }) {
             </Link>
           </div>
         </div>
-        <div className='w-[80%]  js-project md:w-[50%]  lg:w-[30%] project-image-container'>
-          <h1 className='project-name text-[#FF00FF] text-xl text-center mb-[10px]'>
+        <div className='w-[80%] flex flex-col gap-y-[20px] items-center js-project md:w-[50%]  lg:w-[30%] project-image-container'>
+          <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Word Counter
           </h1>
           <img
@@ -555,7 +552,7 @@ function JsProjects({ setJsClick }) {
             alt='word-count'
             className='w-[100%]  rounded-lg project-image '
           />
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
+          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             The script counts the{' '}
             <span className='text-white font-bold'>
               number of words and characters entered in a textarea.

@@ -52,8 +52,8 @@ function Contact({ setShowPopup }) {
   }
 
   return (
-    <section id='contact'>
-      <h2 className='contact-heading my-[25px]  md:text-[25px] text-white font-bold text-center'>
+    <section id='contact' className='mt-[30px]'>
+      <h2 className='contact-heading   md:text-[25px] text-white font-bold text-center'>
         Get in touch
       </h2>
       <div className='flex flex-col items-center  lg:flex-row lg:justify-around lg:items-center lg:mx-[50px] mt-[30px] text-white '>
@@ -62,7 +62,7 @@ function Contact({ setShowPopup }) {
           onSubmit={sendEmail}
           className='contact w-[80%] flex flex-col lg:w-[35%]'
         >
-          <label className='text-[#FF00FF] text-sm mt-[20px] block mb-[5px]'>
+          <label className='text-[#389db6] font-bold text-sm mt-[20px] block mb-[5px]'>
             Name
           </label>
           <input
@@ -71,7 +71,7 @@ function Contact({ setShowPopup }) {
             onChange={() => setNameInputValue(true)}
             className={` rounded-md ${nameInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `}
           />
-          <label className='text-[#FF00FF] text-sm mt-[20px] block mb-[5px]'>
+          <label className='text-[#389db6] font-bold text-sm mt-[20px] block mb-[5px]'>
             Email
           </label>
           <input
@@ -80,7 +80,7 @@ function Contact({ setShowPopup }) {
             onChange={() => setEmailInputValue(true)}
             className={` rounded-md ${emailInputValue ? 'gradient-border' : ''}  bg-transparent outline-0  border-[2px] border-white `}
           />
-          <label className='text-[#FF00FF] text-sm mt-[20px] block mb-[5px]'>
+          <label className='text-[#389db6] font-bold text-sm mt-[20px] block mb-[5px]'>
             Message
           </label>
           <textarea

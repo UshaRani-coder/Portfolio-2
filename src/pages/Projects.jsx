@@ -33,7 +33,7 @@ function Projects() {
         <span className='text-white font-semibold'>chat app</span> and a{' '}
         <span className='text-white font-semibold'>resume builder</span>.
       </p>
-      {reactClick === false && jsClick === false && (
+      {/* {reactClick === false && jsClick === false && (
         <div className='flex gap-[30px] mt-[25px] '>
           <div
             className='py-[30px] px-[25px] md:px-[70px] md:py-[70px] lg:p-[100px] bg-gradient-to-tr from-blue-500 to-pink-500 rounded-xl cursor-pointer react'
@@ -48,9 +48,9 @@ function Projects() {
             <img src={jsIcon} alt='js' width={'60px'} />
           </div>
         </div>
-      )}
-      {reactClick === true && <ReactProjects setReactClick={setReactClick} />}
-      {jsClick === true && <JsProjects setJsClick={setJsClick} />}
+      )} */}
+      <ReactProjects setReactClick={setReactClick} />
+       <JsProjects setJsClick={setJsClick} />
     </section>
   )
 }

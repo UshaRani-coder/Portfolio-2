@@ -44,7 +44,7 @@ function App() {
   }
 
   return (
-    <div className='bg-[#000000] text-white overflow-x-hidden'>
+    <div className='bg-[#171923] text-white overflow-x-hidden'>
       <Navbar toggle={toggle} setToggle={setToggle} handleClick={handleClick} />
 
       <>
