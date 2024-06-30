@@ -294,10 +294,11 @@ textarea:not(:placeholder-shown) {
     animation: myContentAnimationDesktop 1.5s ease backwards; 
  } 
 }
-.active {
-  color: #389db6;
-  text-decoration: underline;
-  text-underline-offset: 8px;
+.active .nav-item{
+fill: #389db6;
+}
+li{
+  list-style-type:none ;
 }
 .role,.name{
   background: linear-gradient(to right, #FFA500, #8A2BE2);
@@ -305,3 +306,4 @@ textarea:not(:placeholder-shown) {
     -webkit-text-fill-color: transparent;
     font-weight: 700;
 }
+

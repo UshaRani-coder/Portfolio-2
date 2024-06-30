@@ -13,10 +13,7 @@ import colorGuessingImg from '../assets/color-guessing-game.png'
 import { Link } from 'react-router-dom'
 function JsProjects() {
   return (
-    <section
-      className=' mt-[30px] text-[14px] md:text-[16px] flex flex-col items-center relative'
-      id='projects'
-    >
+    <>
       {/* <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
@@ -588,7 +585,7 @@ function JsProjects() {
           </div>
         </div>
       </div>
-    </section>
+    </>
   )
 }
 

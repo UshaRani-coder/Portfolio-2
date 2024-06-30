@@ -47,7 +47,7 @@ function App() {
     <div className='bg-[#171923] text-white overflow-x-hidden'>
       <Navbar toggle={toggle} setToggle={setToggle} handleClick={handleClick} />
 
-      <>
+      {/* <>
         {toggle ? (
           <ul
             className={`animate-hamburgerMenu  w-[100%] h-screen absolute top-[0px] bottom-0  z-50 bg-[#1a1a1a] flex flex-col px-[60px] py-[40px] pt-[100px] gap-y-[10px] items-center cursor-pointer`}
@@ -127,15 +127,15 @@ function App() {
               <path d='M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z' />
             </svg>
           </ul>
-        ) : (
+        ) : ( */}
           <Routes>
             <Route
               path='/'
               element={
                 <Home
-                  toggle={toggle}
-                  setToggle={setToggle}
-                  handleClick={handleClick}
+                   toggle={toggle}
+                   setToggle={setToggle}
+                   handleClick={handleClick}
                 />
               }
             />
@@ -146,8 +146,8 @@ function App() {
             <Route path='/testimonials' element={<Testimonials />} />
             <Route path='/contact' element={<Contact />} />
           </Routes>
-        )}
-      </>
+         {/* )}  */}
+      
     </div>
   )
 }

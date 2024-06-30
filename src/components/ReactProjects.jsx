@@ -9,10 +9,8 @@ import reactRouter from '../assets/react-router.svg'
 import { Link } from 'react-router-dom'
 function ReactProjects({ setReactClick }) {
   return (
-    <section
-      className='mt-[50px] text-[14px] md:text-[16px] flex flex-col items-center xl:flex-row xl:justify-around  relative text-[rgb(181,187,198)]'
-      id='projects'
-    >
+    <>
+  
       {/* <svg
         xmlns='http://www.w3.org/2000/svg'
         viewBox='0 0 448 512'
@@ -183,7 +181,7 @@ function ReactProjects({ setReactClick }) {
           </div>
         </div>
       </div>
-    </section>
+    </>
   )
 }
 
