@@ -35,11 +35,11 @@ function Work() {
             contributions include{' '}
             <span className='text-white font-semibold'>leading</span> the
             development of the{' '}
-            <span className='text-white font-semibold'>resume builder</span>{' '}
+            <span className='text-white font-semibold'>Resume Builder</span>{' '}
             feature, which has become an integral part of the platform. I've
             also played a significant role in enhancing the application's{' '}
             <span className='text-white font-semibold'>state management</span>{' '}
-            with <span className='text-white font-semibold'>Redux</span>. The{' '}
+            with <span className='text-white font-semibold'>Redux Toolkit</span>. The{' '}
             <span className='text-white font-semibold'>contribution graph</span>{' '}
             below showcases my{' '}
             <span className='text-white font-semibold'>dedication</span> and{' '}

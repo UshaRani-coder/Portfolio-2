@@ -14,15 +14,25 @@
     transform: translateX(0);
   }
 }
-
-/* #my-img {
-   background: linear-gradient(315deg, #00ccff, #d400d4); 
-  background-color: #389db6;
-  animation:fallAnimation 1.5s ease forwards;
-  display: inline-block;
-  padding: 10px;
-  border-radius: 40px;
-} */
+@keyframes myContentAnimation{
+  0% {
+    transform: translateY(30%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes myContentAnimationDesktop{
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+#my-img {
+  animation:fallAnimation 0.5s ease forwards;
+}
 
 #my-img img {
   max-width: 100%;
@@ -49,7 +59,7 @@
   }
 }
  .animate-content {
-  animation: raiseAnimation 1.5s ease forwards;
+   animation: myContentAnimation 1.5s ease forwards; 
   
 } 
 
@@ -223,39 +233,7 @@ textarea:not(:placeholder-shown) {
   transition: transform 0.3s ease-in-out;
 }
 
-/* .project-image-container:hover .buttons,
-.project-image-container:hover p {
-  opacity: 1;
-  visibility: visible;
-  transition: opacity 0.3s ease-in-out;
-}
-.project-image-container:hover .project-image {
-  filter: brightness(20%);
-} */
 
-/* .project-image-container p {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 80%;
-  height: 80%;
-  max-height: 60%;
-  overflow: auto;
-  padding: 20px;
-  border-radius: 10px;
-  opacity: 0;
-  visibility: hidden;
-} */
-
-/* .buttons {
-  position: absolute;
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  opacity: 0;
-  visibility: hidden;
-} */
 ::-webkit-scrollbar {
   width: 2px;
 }
@@ -312,6 +290,9 @@ textarea:not(:placeholder-shown) {
   #my-img {
     animation: myImageAnimation 1.5s ease forwards;
   }
+  .animate-content {
+    animation: myContentAnimationDesktop 1.5s ease backwards; 
+ } 
 }
 .active {
   color: #389db6;

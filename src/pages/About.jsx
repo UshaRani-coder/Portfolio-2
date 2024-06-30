@@ -32,7 +32,7 @@ function About() {
           <img src={gif} width={'20px'} alt='Waving gif' /> , I'm{' '}
           <span className='name'>Usha Rani!</span>
         </h1>
-        <span className='role text-3xl md:text-4xl lg:text-5xl xl:text-6xl'>
+        <span className='role text-2xl md:text-4xl lg:text-5xl xl:text-6xl'>
           A Frontend Developer,
         </span>
         <p className='px-[10px] md:px-[50px] lg:px-[40px] xl:w-[900px] sm:m-[0px] md:mt-[10px] md:tracking-wider text-white'>
