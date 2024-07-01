@@ -19,7 +19,7 @@ function Work() {
     >
       <div className='lg:flex lg:flex-row lg:items-center  lg:gap-[20px]'>
         <div>
-          <h2 className='mt-[30px] mb-[15px] contributions text-white font-semibold md:text-[25px] text-center lg:text-start '>
+          <h2 className='mt-[30px] mb-[15px]  text-white font-semibold md:text-[25px] text-center lg:text-start '>
             Work Experience
           </h2>
           <p className='leading-[25px] md:leading-[35px]'>

@@ -16,22 +16,22 @@
 }
 @keyframes myContentAnimation{
   0% {
-    transform: translateY(30%);
+    transform: scale(0);
   }
   100% {
-    transform: translateY(0);
+    transform: scale(1);
   }
 }
 @keyframes myContentAnimationDesktop{
   0% {
-    transform: translateX(30%);
+    transform: scale(0);
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1);
   }
 }
 #my-img {
-  animation:fallAnimation 1.5s ease forwards;
+  animation:fallAnimation 0.1s ease forwards;
 }
 
 #my-img img {
