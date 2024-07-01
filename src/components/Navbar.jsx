@@ -1,60 +1,68 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState,useCallback } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
 import { Link as Reflink } from 'react-router-dom'
 
 function Navbar(props) {
-  const [itemToggle, setItemToggle] = useState(false)
-  const [activeSection, setActiveSection] = useState(null)
+  const [itemToggle, setItemToggle] = useState(false);
+  const [activeSection, setActiveSection] = useState(null);
+
   useEffect(() => {
     const scrollToComponent = () => {
-      const hash = window.location.hash
-      console.log(hash)
+      const hash = window.location.hash;
       if (hash) {
         setTimeout(() => {
-          const element = document.querySelector(hash)
-
+          const element = document.querySelector(hash);
           if (element) {
-            let navbarHeight = 0
-            const navbar = document.querySelector('.navbar')
-
-            if (navbar) {
-              navbarHeight = navbar.offsetHeight
-              console.log(navbarHeight)
-            }
-            let offset = element.offsetTop
-            window.scrollTo({ top: offset, behavior: 'smooth' })
+            const navbar = document.querySelector('.navbar');
+            const navbarHeight = navbar ? navbar.offsetHeight : 0;
+            const offset = element.offsetTop - 50;
+            window.scrollTo({ top: offset, behavior: 'smooth' });
           }
-        }, 100)
+        }, 100);
       } else {
-        window.scrollTo(0, 0)
+        window.scrollTo(0, 0);
       }
-    }
+    };
 
-    scrollToComponent()
-  }, [itemToggle])
+    scrollToComponent();
+  }, [itemToggle]);
+
+  const handleScroll = useCallback(() => {
+    const sections = document.querySelectorAll('section');
+    let currentSection = null;
+
+    sections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      const threshold = window.innerHeight / 3; // Adjust this value as needed
+
+      if (rect.top <= threshold && rect.bottom >= threshold) {
+        currentSection = section.id;
+      }
+    });
+
+    if (currentSection && activeSection !== currentSection) {
+      setActiveSection(currentSection);
+    }
+  }, [activeSection]);
+
   useEffect(() => {
-    const handleScroll = () => {
-      const sections = document.querySelectorAll('section')
-      sections.forEach((section) => {
-        const rect = section.getBoundingClientRect()
-        // console.log(
-        //   `Section: ${section.id}, Top: ${rect.top}, Bottom: ${rect.bottom} , height: ${window.innerHeight}`
-        // )
-        if (
-          Math.round(rect.top) >= 0 &&
-          Math.round(rect.bottom) <= window.innerHeight
-        ) {
-          setActiveSection(section.id)
-        }
-      })
-    }
+    const debounce = (func, wait) => {
+      let timeout;
+      return (...args) => {
+        clearTimeout(timeout);
+        timeout = setTimeout(() => func(...args), wait);
+      };
+    };
 
-    window.addEventListener('scroll', handleScroll)
+    const debouncedHandleScroll = debounce(handleScroll, 50);
+    window.addEventListener('scroll', debouncedHandleScroll);
+
+    handleScroll(); // Set initial active section
 
     return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
+      window.removeEventListener('scroll', debouncedHandleScroll);
+    };
+  }, [handleScroll]);
   return (
     <div className='navbar flex w-full justify-between items-center bg-white-800 backdrop-blur-xl shadow-lg shadow-black/[0.03] p-[10px] fixed top-0 z-50 md:flex-col md:pt-[50px] md:left-0 md:bottom-0 md:w-[40px] lg:w-[50px]'>
       <li className={`section ${activeSection === 'home' ? 'active' : ''}`}>
