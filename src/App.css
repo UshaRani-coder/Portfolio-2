@@ -1,17 +1,17 @@
 @keyframes fallAnimation {
   0% {
-    transform: translateY(-50%);
+    transform: scale(0);
   }
   100% {
-    transform: translateY(0);
+    transform: scale(1);
   }
 }
 @keyframes myImageAnimation {
   0% {
-    transform: translateX(-100%);
+    transform: scale(0);
   }
   100% {
-    transform: translateX(0);
+    transform: scale(1);
   }
 }
 @keyframes myContentAnimation{
@@ -31,7 +31,7 @@
   }
 }
 #my-img {
-  animation:fallAnimation 0.5s ease forwards;
+  animation:fallAnimation 1.5s ease forwards;
 }
 
 #my-img img {
@@ -111,23 +111,6 @@
   display: inline-block;
   margin-left: 30%;
 }
-
-/* .work-exp::after,
-.contributions::after,
-.skills::after,
-.projects::after,
-.testimonials::after,
-.contact-heading::after {
-  content: '';
-  position: absolute;
-  left: 20%;
-  bottom: -5px;
-  width: 50%;
-  height: 2px;
-  background-color: #ff00ff;
-  
-} */
-
 .skill,
 .react-project,
 .js-project,

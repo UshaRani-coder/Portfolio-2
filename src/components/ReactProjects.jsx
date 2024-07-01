@@ -7,21 +7,9 @@ import reduxIcon from '../assets/redux-icon.png'
 import firebaseIcon from '../assets/firebase.png'
 import reactRouter from '../assets/react-router.svg'
 import { Link } from 'react-router-dom'
-function ReactProjects({ setReactClick }) {
+function ReactProjects() {
   return (
     <>
-  
-      {/* <svg
-        xmlns='http://www.w3.org/2000/svg'
-        viewBox='0 0 448 512'
-        fill='#FF00FF'
-        width={'20px'}
-        className='absolute top-[-35px] left-[30px] md:left-[100px] lg:left-[130px]  cursor-pointer'
-        onClick={() => setReactClick(false)}
-      >
-        <path d='M9.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.2 288 416 288c17.7 0 32-14.3 32-32s-14.3-32-32-32l-306.7 0L214.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z' />
-      </svg> */}
-
       <div className='flex flex-col items-center lg:flex-row  items-center gap-y-[30px] lg:flex-row lg:items-center lg:justify-around'>
         <div className='react-project w-[80%]   md:w-[50%] lg:w-[30%]  '>
           <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>

@@ -1,72 +1,70 @@
-import React, { useEffect, useState,useCallback } from 'react'
+import React, { useEffect, useState, useCallback } from 'react'
 import { HashLink as Link } from 'react-router-hash-link'
-import { Link as Reflink } from 'react-router-dom'
 
-function Navbar(props) {
-  const [itemToggle, setItemToggle] = useState(false);
-  const [activeSection, setActiveSection] = useState(null);
+function Navbar() {
+  const [itemToggle, setItemToggle] = useState(false)
+  const [activeSection, setActiveSection] = useState(null)
 
   useEffect(() => {
     const scrollToComponent = () => {
-      const hash = window.location.hash;
+      const hash = window.location.hash
       if (hash) {
         setTimeout(() => {
-          const element = document.querySelector(hash);
+          const element = document.querySelector(hash)
           if (element) {
-            const navbar = document.querySelector('.navbar');
-            const navbarHeight = navbar ? navbar.offsetHeight : 0;
-            const offset = element.offsetTop - 50;
-            window.scrollTo({ top: offset, behavior: 'smooth' });
+            const offset = element.offsetTop - 50
+            window.scrollTo({ top: offset, behavior: 'smooth' })
           }
-        }, 100);
+        }, 100)
       } else {
-        window.scrollTo(0, 0);
+        window.scrollTo(0, 0)
       }
-    };
+    }
 
-    scrollToComponent();
-  }, [itemToggle]);
+    scrollToComponent()
+  }, [itemToggle])
 
   const handleScroll = useCallback(() => {
-    const sections = document.querySelectorAll('section');
-    let currentSection = null;
+    const sections = document.querySelectorAll('section')
+    let currentSection = null
 
     sections.forEach((section) => {
-      const rect = section.getBoundingClientRect();
-      const threshold = window.innerHeight / 3; // Adjust this value as needed
+      const rect = section.getBoundingClientRect()
+      const threshold = window.innerHeight / 3 // Adjust this value as needed
 
       if (rect.top <= threshold && rect.bottom >= threshold) {
-        currentSection = section.id;
+        currentSection = section.id
       }
-    });
+    })
 
     if (currentSection && activeSection !== currentSection) {
-      setActiveSection(currentSection);
+      setActiveSection(currentSection)
     }
-  }, [activeSection]);
+  }, [activeSection])
 
   useEffect(() => {
     const debounce = (func, wait) => {
-      let timeout;
+      let timeout
       return (...args) => {
-        clearTimeout(timeout);
-        timeout = setTimeout(() => func(...args), wait);
-      };
-    };
+        clearTimeout(timeout)
+        timeout = setTimeout(() => func(...args), wait)
+      }
+    }
 
-    const debouncedHandleScroll = debounce(handleScroll, 50);
-    window.addEventListener('scroll', debouncedHandleScroll);
+    const debouncedHandleScroll = debounce(handleScroll, 50)
+    window.addEventListener('scroll', debouncedHandleScroll)
 
-    handleScroll(); // Set initial active section
+    handleScroll() // Set initial active section
 
     return () => {
-      window.removeEventListener('scroll', debouncedHandleScroll);
-    };
-  }, [handleScroll]);
+      window.removeEventListener('scroll', debouncedHandleScroll)
+    }
+  }, [handleScroll])
   return (
     <div className='navbar flex w-full justify-between items-center bg-white-800 backdrop-blur-xl shadow-lg shadow-black/[0.03] p-[10px] fixed top-0 z-50 md:flex-col md:pt-[50px] md:left-0 md:bottom-0 md:w-[40px] lg:w-[50px]'>
       <li className={`section ${activeSection === 'home' ? 'active' : ''}`}>
-        <Link to='#' scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}>
+        <Link to='#' scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+        >
           <svg
             xmlns='http://www.w3.org/2000/svg'
             viewBox='0 0 576 512'
@@ -82,6 +80,7 @@ function Navbar(props) {
         <Link
           to='#about'
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -98,6 +97,7 @@ function Navbar(props) {
         <Link
           to='#work'
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -114,6 +114,7 @@ function Navbar(props) {
         <Link
           to='#skills'
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -130,6 +131,7 @@ function Navbar(props) {
         <Link
           to='#projects'
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -149,6 +151,7 @@ function Navbar(props) {
         <Link
           to='#testimonials'
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'
@@ -166,6 +169,7 @@ function Navbar(props) {
         <Link
           to='#contact'
           scroll={(el) => el.scrollIntoView({ behavior: 'smooth' })}
+          
         >
           <svg
             xmlns='http://www.w3.org/2000/svg'

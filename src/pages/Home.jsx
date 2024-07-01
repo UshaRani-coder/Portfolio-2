@@ -7,7 +7,6 @@ import Testimonial from './Testimonials.jsx'
 import Contact from './Contact.jsx'
 import About from './About.jsx'
 import { ToastContainer } from 'react-toastify'
-// import AnimatedBackground from '../ui/AnimateBackground.jsx'
 
 import 'react-toastify/dist/ReactToastify.css'
 function Home(props) {
@@ -20,7 +19,7 @@ function Home(props) {
     >
       {/* <AnimatedBackground /> */}
       <Navbar {...props} />
-      <ToastContainer className='mt-[40px] w-auto max-w-[250px] text-center ' />
+      <ToastContainer className=' max-w-[400px]' />
       <About />
       <Work />
       <Skills />
