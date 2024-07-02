@@ -74,7 +74,7 @@ function ReactProjects() {
           </p>
           <div className=' flex mt-[20px]   justify-center mt-[40px] gap-[20px] mb-[25px]'>
             <Link to='https://github.com/SiddheshAR/resume_builder'>
-              <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
+              <button style={{border:'none'}} className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 496 512'
@@ -85,8 +85,8 @@ function ReactProjects() {
                 </svg>
               </button>
             </Link>
-            <Link to='https://resume-builder-22l6jeoa7-ur66026gmailcoms-projects.vercel.app'>
-              <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
+            <Link to='https://resume-builder-rouge-ten.vercel.app/'>
+              <button  style={{border:'none'}}className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 640 512'
@@ -143,7 +143,7 @@ function ReactProjects() {
           </p>
           <div className=' flex mt-[20px] justify-center mt-[40px] gap-[20px] mb-[25px]'>
             <Link to='https://github.com/UshaRani-coder/Chat-Application'>
-              <button className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 glow'>
+              <button style={{border:'none'}} className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 496 512'
@@ -155,7 +155,7 @@ function ReactProjects() {
               </button>
             </Link>
             <Link to='https://chat-application-lyyj.vercel.app/'>
-              <button className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 glow'>
+              <button style={{border:'none'}} className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
                   viewBox='0 0 640 512'

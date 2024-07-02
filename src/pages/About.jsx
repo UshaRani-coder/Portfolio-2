@@ -23,7 +23,7 @@ function About() {
 
   return (
     <section
-      className='p-[10px] lg:px-[40px] flex flex-col-reverse lg:flex-row-reverse lg:justify-center lg:items-center xl:gap-[50px] pt-[60px] items-center text-[rgb(181,187,198)]'
+      className='mt-[30px] p-[10px] lg:px-[40px] flex flex-col-reverse lg:flex-row-reverse lg:justify-around lg:gap-[50px] lg:items-center  pt-[60px] items-center text-[rgb(181,187,198)]'
       id='about'
     >
       <div className='animate-content flex flex-col items-center pt-[20px] lg:pt-0'>
@@ -97,7 +97,7 @@ function About() {
                 </svg>
               </div>
             </Link>
-            <Link to='https://github.com/Usha6602'>
+            <Link to='https://github.com/UshaRani-coder'>
               <div className='border border-[#389db6] rounded-full p-[10px]'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'

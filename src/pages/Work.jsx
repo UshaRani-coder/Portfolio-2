@@ -14,10 +14,10 @@ function Work() {
   }
   return (
     <section
-      className='px-[10px] mt-[30px] flex flex-col items-center text-[rgb(181,187,198)] md:px-[50px] lg:px-[70px] lg:pt-[40px]'
+      className='px-[10px] mt-[30px] flex flex-col items-center text-[rgb(181,187,198)] md:px-[50px] lg:px-[70px] '
       id='work'
     >
-      <div className='lg:flex lg:flex-row lg:items-center  lg:gap-[20px]'>
+      <div className='flex flex-col items-center lg:flex lg:flex-row lg:items-center  lg:gap-[20px]'>
         <div>
           <h2 className='mt-[30px] mb-[15px]  text-white font-semibold md:text-[25px] text-center lg:text-start '>
             Work Experience
