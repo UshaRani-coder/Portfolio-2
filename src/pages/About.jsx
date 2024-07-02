@@ -121,7 +121,7 @@ function About() {
           style={{ display: 'none' }}
         />
         {imageLoaded && (
-          <Link to='https://usha-portfolio-website.vercel.app/'>
+          <Link to='https://usharani.vercel.app/'>
           <div
             id='my-img'
             className='w-[150px] md:w-[180px] border-[6px] border-[#389db6] rounded-full animate-img'
