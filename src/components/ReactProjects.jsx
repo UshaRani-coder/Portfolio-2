@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom'
 function ReactProjects() {
   return (
     <>
-      <div className='flex flex-col items-center lg:flex-row  items-center gap-y-[30px] lg:flex-row lg:items-center lg:justify-around'>
+      <div className='flex flex-col items-center lg:flex-row  items-center gap-y-[30px] lg:flex-row lg:items-center lg:justify-around mt-[20px]'>
         <div className='react-project w-[80%]   md:w-[50%] lg:w-[30%]  '>
           <h1 className='project-name text-[#389db6] font-bold text-xl text-center mb-[10px]'>
             Resume Builder
@@ -20,7 +20,7 @@ function ReactProjects() {
             alt='resume-builder'
             className='w-[100%]  rounded-lg '
           />{' '}
-          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px] h-[180px] max-h-[180px] overflow-y-auto'>
+          <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px] h-[180px] max-h-[180px] overflow-y-auto text-[14px] lg:text-[16px]'>
             Made as a team. I was responsible for designing the{' '}
             <span className='text-white font-bold'>
               layout for Desktop-view,responsiveness,implementing Redux
@@ -73,7 +73,7 @@ function ReactProjects() {
             </Link>
           </p>
           <div className=' flex mt-[20px]   justify-center mt-[40px] gap-[20px] mb-[25px]'>
-            <Link to='https://github.com/SiddheshAR/resume_builder'>
+            <Link to='https://github.com/UshaRani-coder/Resume-Builder'>
               <button style={{border:'none'}} className='bg-[#24292e] hover:bg-[#0366d6] text-white font-bold py-2 px-4 rounded-md focus:outline-none'>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -85,7 +85,7 @@ function ReactProjects() {
                 </svg>
               </button>
             </Link>
-            <Link to='https://resume-builder-rouge-ten.vercel.app/'>
+            <Link to='https://ur-resume-builder.vercel.app/'>
               <button  style={{border:'none'}}className='bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-md focus:outline-none '>
                 <svg
                   xmlns='http://www.w3.org/2000/svg'
@@ -109,7 +109,7 @@ function ReactProjects() {
             className='w-[100%] rounded-lg '
           />
           <p className='text-ellipsis text-ellipsis overflow-hidden mt-[20px]'>
-            <span className='text-white font-bold text-[14px]'>
+            <span className='text-white font-bold text-[14px] lg:text-[16px]'>
               Real-time Messaging,User Authentication,User Profiles,Emoji
               Support,File Sharing,Private Chats,Message Deletion,Chat
               Deletion,Fully Responsive

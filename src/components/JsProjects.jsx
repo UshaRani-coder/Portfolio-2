@@ -24,7 +24,7 @@ function JsProjects() {
             alt='expense-tracker'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto '>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto '>
             Dynamic webpage with Tailwind CSS utilizes{' '}
             <span className='text-white font-bold'>local storage</span> for
             finance tracking.
@@ -71,7 +71,7 @@ function JsProjects() {
             alt='music-player'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             Dynamic music player with{' '}
             <span className='text-white font-bold'>
               play, pause, next, and previous controls. Displays song details,
@@ -115,7 +115,7 @@ function JsProjects() {
             alt='typing-game'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             The project involves a typing speed test application with{' '}
             <span className='text-white font-bold'>
               dynamic paragraph rendering. It tracks words per minute (WPM),
@@ -159,7 +159,7 @@ function JsProjects() {
             alt='form-validation'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             It{' '}
             <span className='text-white font-bold'>
               checks for blank inputs, valid email format, password complexity,
@@ -210,7 +210,7 @@ function JsProjects() {
             alt='calculator'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             A calculator with{' '}
             <span className='text-white font-bold'>
               input, delete, reset, and result
@@ -258,7 +258,7 @@ function JsProjects() {
             alt='Memory Game'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             A memory game with{' '}
             <span className='text-white font-bold'>
               flipping cards, matching images, and congratulatory alerts
@@ -303,7 +303,7 @@ function JsProjects() {
             alt='stop-watch'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             A stopwatch with hours, minutes, seconds, and milliseconds displayed
             in 00 format. Functions manage{' '}
             <span className='text-white font-bold'>
@@ -348,7 +348,7 @@ function JsProjects() {
             alt='to-do'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             This project lets users to{' '}
             <span className='text-white font-bold'>
               add, edit, and delete tasks
@@ -397,7 +397,7 @@ function JsProjects() {
             alt='color-guessingr'
             className='w-[100%]  rounded-lg project-image '
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             This project{' '}
             <span className='text-white font-bold'>
               generates random RGB color and displays it along with colored
@@ -453,7 +453,7 @@ function JsProjects() {
             alt='countdown'
             className='w-[100%]  rounded-lg project-image'
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             This project{' '}
             <span className='text-white font-bold'>
               prompts the user to enter their birthdate in the 'year-month-day'
@@ -509,7 +509,7 @@ function JsProjects() {
             alt='word-count'
             className='w-[100%]  rounded-lg project-image '
           />
-          <p className='text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
+          <p className='text-[14px] lg:text-[16px] text-ellipsis text-ellipsis h-[180px] max-h-[180px] overflow-auto mt-[20px]'>
             The script counts the{' '}
             <span className='text-white font-bold'>
               number of words and characters entered in a textarea.

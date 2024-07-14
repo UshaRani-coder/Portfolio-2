@@ -44,7 +44,7 @@ function About() {
         <div className='flex flex-col items-center md:flex-row md:gap-[70px]'>
           <div className='mt-[10px]'>
             <a
-              href='https://drive.google.com/file/d/1U4olDE49DqDLP0PappfOCZE-viXDnkn_/view'
+              href='https://drive.google.com/file/d/168NU8uXVGPufpIFIAcQgvGM6LZlj72DZ/view?usp=sharing'
               download='Usha Resume.pdf'
             >
               <div className='text-[14px] border border-[#389db6] bg-[#389db6] rounded-full p-[10px] w-[130px] md:w-[150px] flex items-center justify-between'>
@@ -112,6 +112,7 @@ function About() {
           </div>
         </div>
       </div>
+      
       <div className='animate-img'>
         <img
           className='bg-[rgb(240,70,240)] rounded-full p-[10px] border-none'
