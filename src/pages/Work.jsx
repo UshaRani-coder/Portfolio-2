@@ -24,14 +24,14 @@ function Work() {
           </h2>
           <p className='leading-[25px] md:leading-[35px]'>
             I've been actively involved in{' '}
-            <span className='text-white font-semibold'>contributing</span> to{' '}
+            contributing to{' '}
             <Link
               to='https://inspirationapp.org/'
               className='text-[#319bef] underline'
             >
               Inspiration App
             </Link>{' '}
-            since <span className='text-white font-semibold'>January</span>. My
+            since <span className='text-white font-semibold'>January</span> as a <span className='text-white font-semibold'>Full-stack developer</span>. My
             contributions include{' '}
             <span className='text-white font-semibold'>leading</span> the
             development of the{' '}
@@ -39,9 +39,8 @@ function Work() {
             feature, which has become an integral part of the platform. I've
             also played a significant role in enhancing the application's{' '}
             <span className='text-white font-semibold'>state management</span>{' '}
-            with <span className='text-white font-semibold'>Redux Toolkit</span>. The{' '}
-            <span className='text-white font-semibold'>contribution graph</span>{' '}
-            below showcases my{' '}
+            with <span className='text-white font-semibold'>Redux Toolkit</span>. This{' '}
+            <span className='text-white font-semibold'>contribution graph</span>{' '} showcases my{' '}
             <span className='text-white font-semibold'>dedication</span> and{' '}
             <span className='text-white font-semibold'>commitment</span> to our
             projects.
@@ -66,6 +65,17 @@ function Work() {
           productive team environment
         </span>
         .
+        Although I was working in <Link
+              to='https://curiousecosystem.org/'
+              className='text-[#319bef] underline'
+            >
+            Curious Ecosystem
+            </Link>{' '}, I dedicated a substantial part of my efforts to the <Link
+              to='https://inspirationapp.org/'
+              className='text-[#319bef] underline'
+            >
+              Inspiration App
+            </Link>{' '} project.
       </p>
     </section>
   )
